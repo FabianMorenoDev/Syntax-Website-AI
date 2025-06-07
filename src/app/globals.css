@@ -21,7 +21,7 @@
   font-style: normal;
 }
 
-@theme inline {
+@theme {
   /* Syntax Brand Colors */
   --color-syntax-primary-900: #060f38;
   --color-syntax-primary-700: #383f60;
@@ -62,4 +62,13 @@
   /* Syntax Brand Fonts */
   --font-family-clash-display: 'ClashDisplay', ui-serif, serif;
   --font-family-clash-grotesk: 'ClashGrotesk', ui-sans-serif, sans-serif;
+}
+
+/* Custom font utility classes */
+.font-clash-display {
+  font-family: var(--font-family-clash-display);
+}
+
+.font-clash-grotesk {
+  font-family: var(--font-family-clash-grotesk);
 } 
