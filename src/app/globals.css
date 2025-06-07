@@ -1,0 +1,65 @@
+@import 'tailwindcss';
+
+/* Syntax Brand Fonts */
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('/fonts/clash-display/ClashDisplay-Variable.woff2') format('woff2'),
+       url('/fonts/clash-display/ClashDisplay-Variable.woff') format('woff'),
+       url('/fonts/clash-display/ClashDisplay-Variable.ttf') format('truetype');
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ClashGrotesk';
+  src: url('/fonts/clash-grotesk/ClashGrotesk-Variable.woff2') format('woff2'),
+       url('/fonts/clash-grotesk/ClashGrotesk-Variable.woff') format('woff'),
+       url('/fonts/clash-grotesk/ClashGrotesk-Variable.ttf') format('truetype');
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@theme inline {
+  /* Syntax Brand Colors */
+  --color-syntax-primary-900: #060f38;
+  --color-syntax-primary-700: #383f60;
+  --color-syntax-primary-500: #6a6f88;
+  --color-syntax-primary-300: #9b9faf;
+  --color-syntax-primary-100: #cdcfd7;
+  
+  --color-syntax-purple-900: #7656fd;
+  --color-syntax-purple-700: #9178fd;
+  --color-syntax-purple-500: #ad9afe;
+  --color-syntax-purple-300: #c8bcfe;
+  --color-syntax-purple-100: #e4ddff;
+  
+  --color-syntax-yellow-900: #fff351;
+  --color-syntax-yellow-700: #fff573;
+  --color-syntax-yellow-500: #fff796;
+  --color-syntax-yellow-300: #fffab9;
+  --color-syntax-yellow-100: #fffcdc;
+  
+  --color-syntax-pink-900: #e834b6;
+  --color-syntax-pink-700: #ed5dc4;
+  --color-syntax-pink-500: #f284d3;
+  --color-syntax-pink-300: #f6ade1;
+  --color-syntax-pink-100: #fad6f0;
+  
+  --color-syntax-green-900: #56e57d;
+  --color-syntax-green-700: #7aea98;
+  --color-syntax-green-500: #9aefb1;
+  --color-syntax-green-300: #bcf5cb;
+  --color-syntax-green-100: #dcfae4;
+  
+  --color-syntax-blue-900: #c8ddf2;
+  --color-syntax-blue-700: #d3e4f5;
+  --color-syntax-blue-500: #ddebf7;
+  --color-syntax-blue-300: #e8f1fa;
+  --color-syntax-blue-100: #f4f8fc;
+
+  /* Syntax Brand Fonts */
+  --font-family-clash-display: 'ClashDisplay', ui-serif, serif;
+  --font-family-clash-grotesk: 'ClashGrotesk', ui-sans-serif, sans-serif;
+} 
