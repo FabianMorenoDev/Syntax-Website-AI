@@ -156,7 +156,7 @@ export default function ContactPage() {
                     <Phone className="w-6 h-6 text-purple-600 mt-1" />
                     <div>
                       <h4 className="font-semibold text-gray-900">Telefon</h4>
-                      <p className="text-gray-600">+49 30 75437830</p>
+                      <p className="text-gray-600">+49 30 754378530</p>
                       <p className="text-sm text-gray-500">Kostenlose Hotline</p>
                     </div>
                   </div>

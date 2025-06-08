@@ -1,6 +1,40 @@
 # 🎓 Syntax Institut
 
-**Moderne Tech-Ausbildung für den Quereinstieg in Web, App und Cloud – modular, anerkannt & förderfähig**
+**Moderne Tech-Ausbildung für den Quereinstieg in die TN & Entwicklung, anerkannt & förderfähig**
+
+---
+
+## 🚀 Über uns: Bildung neu gedacht
+
+Das Syntax Institut ist ein AZAV-zertifizierter Bildungsträger mit Sitz in Berlin, gegründet im **September 2021**. Unser Ziel: Menschen praxisnah, flexibel und anerkannt für die Tech-Welt qualifizieren**.
+
+Unsere Kurse finden **online** statt und richten sich an alle, die beruflich neu starten oder sich weiterentwickeln möchten – unabhängig von Vorkenntnissen oder Lebenslauf.
+
+---
+
+## 🧭 Unser Leitbild
+
+Wir verstehen Weiterbildung als aktiven Beitrag zur **nachhaltigen Integration in den Arbeitsmarkt**. Daher legen wir großen Wert auf:
+
+* **Praxisnahe und zukunftsorientierte Curricula**
+* **Empathische Begleitung auf Augenhöhe**
+* **Langfristige Jobperspektiven für unsere Teilnehmenden**
+
+Wir fördern individuelle Stärken und geben unseren Lernenden die Werkzeuge an die Hand, ihre berufliche Zukunft selbstbestimmt zu gestalten.
+
+Als Teil der aktiven Arbeitsmarktpolitik steht für uns **Verlässlichkeit und Qualität** im Vordergrund – für unsere Teilnehmenden ebenso wie für unsere Partner\:innen.
+
+---
+
+## 👥 Wer wir sind
+
+Wir sind ein interdisziplinäres Team aus erfahrenen Entwickler\:innen, Designer\:innen, Coaches und Pädagog\:innen – mit jahrzehntelanger Praxis in der Entwicklung.
+
+Unsere Mission: **Lernen menschlich machen.**
+
+* Mit **Empathie, Geduld und Offenheit** begleiten wir jede\:n Einzelne\:n individuell.
+* Wir nehmen uns Zeit, hören zu und **entwickeln gemeinsam Perspektiven**.
+* Auch unsere Mitarbeitenden bilden sich kontinuierlich weiter – denn Lernen hört bei uns nie auf.
 
 ---
 
@@ -11,11 +45,11 @@ Statt starrer Kurse folgt das Institut einem flexiblen **Lernpfadmodell** – be
 
 ### Lernpfad-Highlights:
 
-* **Einzelbuchung möglich**: Jedes Modul ist separat förderfähig.
-* **Individuell kombinierbar**: z. B. Einstieg mit Webdesign, danach App- oder DevOps-Vertiefung.
-* **Empfohlene Lernpfade**: Die Kurse Web, App und Cloud bestehen aus sorgfältig kuratierten Modulreihenfolgen.
-* **Flexibler Einstieg**: Auch ein Start bei Modul 3 ist möglich (z. B. bei Vorerfahrung).
-* **Anerkannte Abschlüsse**: Viele Module enden mit IHK-Zertifikaten.
+* **Einzelbuchung möglich**: Jedes Modul ist separat förderfähig
+* **Individuell kombinierbar**: z. B. Einstieg mit Webdesign, danach App- oder DevOps-Vertiefung
+* **Empfohlene Lernpfade**: Die Kurse Web, App und Cloud bestehen aus sorgfältig kuratierten Modulreihenfolgen
+* **Flexibler Einstieg**: Auch ein Start bei Modul 3 ist möglich (z. B. bei Vorerfahrung)
+* **Anerkannte Abschlüsse**: Viele Module enden mit offiziellen IHK-Zertifikaten
 
 ---
 
@@ -69,6 +103,7 @@ Praxisnah, ideal auch für technisch orientierte Quereinsteiger\:innen.
 
 🧪 Optional: Praxisprojekt + Bewerbungssprints + Prüfungsvorbereitung
 
+
 ---
 
 ## 🎯 Zielgruppe
@@ -87,6 +122,8 @@ Praxisnah, ideal auch für technisch orientierte Quereinsteiger\:innen.
 * Persönliche Betreuung durch Dozent\:innen, Tutor\:innen & Career Coaches
 * E-Learning-Plattform mit Aufgaben, Videos & Tools
 * Optionaler MacBook-Leihservice
+* Didaktisch fundierte Curricula mit Projektbezug & Praxisorientierung
+* Lernbegleitung durch wöchentliche 1:1-Sessions bei Bedarf
 
 ---
 
@@ -97,8 +134,10 @@ Praxisnah, ideal auch für technisch orientierte Quereinsteiger\:innen.
   * *Junior Product Designer*
   * *Junior Web Developer*
   * *Web Development Specialist*
-  * *App Developer iOS / Android*
+  * *App Developer iOS*
+  * *App Developer Android*
   * *Cloud IT Administrator*
+
 * Weitere optionale Zertifikate:
 
   * Professional Scrum Master I

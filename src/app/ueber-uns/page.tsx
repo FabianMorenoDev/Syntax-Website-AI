@@ -65,12 +65,10 @@ export default function AboutUsPage() {
   ];
 
   const milestones = [
-    { year: '2018', event: 'Gründung von SYNTAX Institut', description: 'Start mit Web Development Kursen' },
-    { year: '2019', event: 'AZAV-Zertifizierung', description: 'Offizielle Anerkennung als Bildungsträger' },
-    { year: '2020', event: 'Expansion der Kurse', description: 'App Development und Cloud Engineering' },
-    { year: '2021', event: '500+ Absolventen', description: 'Meilenstein erfolgreicher Karrierewechsel' },
-    { year: '2022', event: 'IHK-Partnerschaft', description: 'Anerkannte Zertifizierungen' },
-    { year: '2024', event: '1000+ Erfolgsgeschichten', description: 'Marktführer in IT-Weiterbildung' }
+    { year: '2021', event: 'Gründung von SYNTAX Institut', description: 'Start im September mit modularen IT-Weiterbildungen' },
+    { year: '2022', event: 'AZAV-Zertifizierung', description: 'Offizielle Anerkennung als Bildungsträger' },
+    { year: '2023', event: 'IHK-Partnerschaft', description: 'Anerkannte Zertifizierungen für alle Lernpfade' },
+    { year: '2024', event: '1000+ Erfolgsgeschichten', description: 'Marktführer in modularer IT-Weiterbildung' }
   ];
 
   return (

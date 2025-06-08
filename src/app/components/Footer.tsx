@@ -91,7 +91,7 @@ export default function Footer() {
               <div className="flex items-start space-x-2">
                 <Phone className="w-4 h-4 mt-0.5 text-syntax-yellow-900" />
                 <div>
-                  <p className="text-syntax-primary-100 text-sm">+49 30 75437830</p>
+                  <p className="text-syntax-primary-100 text-sm">+49 30 754378530</p>
                   <p className="text-syntax-primary-300 text-xs">Kostenlose Hotline</p>
                 </div>
               </div>

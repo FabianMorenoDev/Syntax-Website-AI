@@ -11,45 +11,31 @@ export const metadata = {
 export default function AppDevelopmentPage() {
   const modules = [
     {
-      week: 'Wochen 1-4',
-      title: 'Mobile Grundlagen',
-      description: 'Einführung in Mobile Development, UI/UX Basics',
-      skills: ['Mobile Design Patterns', 'User Experience', 'Platform Guidelines', 'Development Tools', 'App Store Richtlinien', 'Prototyping'],
+      week: 'Modul 1 (4 Monate)',
+      title: 'UX/UI Design',
+      description: 'App-Designprinzipien, User Flows, Wireframes & Prototyping in Figma, Design-Transfer in Xcode',
+      skills: ['App-Designprinzipien', 'User Flows', 'Wireframes & Prototyping', 'Figma', 'Design-Transfer', 'Xcode Interface'],
       icon: Smartphone
     },
     {
-      week: 'Wochen 5-8',
-      title: 'Native iOS Development',
-      description: 'Swift, SwiftUI, iOS SDK, Xcode',
-      skills: ['Swift Programmierung', 'SwiftUI Framework', 'iOS SDK', 'Xcode IDE', 'Interface Builder', 'Core Data'],
+      week: 'Modul 2 (3 Monate)',
+      title: 'Programmiergrundlagen',
+      description: 'Swift-Grundlagen, Xcode-Einführung, Logik & Syntax, Kontrollstrukturen, App-Grundgerüste',
+      skills: ['Swift-Grundlagen', 'Xcode-Einführung', 'Logik & Syntax', 'Kontrollstrukturen', 'App-Grundgerüste', 'iOS Playground'],
       icon: Smartphone
     },
     {
-      week: 'Wochen 9-12',
-      title: 'Native Android Development',
-      description: 'Kotlin, Android SDK, Android Studio',
-      skills: ['Kotlin Programmierung', 'Android SDK', 'Android Studio', 'Material Design', 'Room Database', 'Jetpack Components'],
+      week: 'Modul 3 (2,5 Monate)',
+      title: 'iOS App-Entwicklung',
+      description: 'SwiftUI, Datenhandling, Navigation, Animationen, Core Features, SwiftData',
+      skills: ['SwiftUI Framework', 'Datenhandling', 'Navigation', 'Animationen', 'Core Features', 'SwiftData'],
       icon: Tablet
     },
     {
-      week: 'Wochen 13-16',
-      title: 'Cross-Platform Development',
-      description: 'React Native, Flutter Basics',
-      skills: ['React Native', 'Flutter Grundlagen', 'Code Sharing', 'Platform APIs', 'Navigation', 'State Management'],
-      icon: Globe
-    },
-    {
-      week: 'Wochen 17-20',
-      title: 'Backend & Services',
-      description: 'APIs, Cloud Services, Push Notifications',
-      skills: ['REST APIs', 'GraphQL', 'Firebase', 'Cloud Functions', 'Push Notifications', 'Authentication'],
-      icon: Globe
-    },
-    {
-      week: 'Wochen 21-24',
-      title: 'Deployment & Portfolio',
-      description: 'App Store Deployment, Portfolio, Zertifizierung',
-      skills: ['App Store Connect', 'Google Play Console', 'CI/CD für Apps', 'App Marketing', 'Portfolio Apps', 'IHK-Zertifizierung'],
+      week: 'Modul 4 (2,5 Monate)',
+      title: 'Android App-Entwicklung',
+      description: 'Jetpack Compose, Kotlin, Architektur, Android Studio, Persistenz, Gerätefunktionen',
+      skills: ['Jetpack Compose', 'Kotlin', 'Android Architektur', 'Android Studio', 'Persistenz', 'Gerätefunktionen'],
       icon: Award
     }
   ];
@@ -81,7 +67,7 @@ export default function AppDevelopmentPage() {
             <div className="space-y-8">
               <div className="inline-flex items-center bg-syntax-yellow-900 text-syntax-primary-900 px-4 py-2 rounded-full text-sm font-medium">
                 <Award className="w-4 h-4 mr-2" />
-                Vollzeit • 6 Monate • IHK-Zertifikat
+                Vollzeit • 12 Monate • IHK-Zertifikat
               </div>
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight font-clash-display">
@@ -106,7 +92,7 @@ export default function AppDevelopmentPage() {
 
               <div className="grid grid-cols-3 gap-6 text-center">
                 <div>
-                  <div className="text-3xl font-bold text-syntax-yellow-900">24</div>
+                  <div className="text-3xl font-bold text-syntax-yellow-900">48</div>
                   <div className="text-sm text-syntax-pink-100">Wochen Intensiv</div>
                 </div>
                 <div>

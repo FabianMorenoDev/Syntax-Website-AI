@@ -11,46 +11,32 @@ export const metadata = {
 export default function WebDevelopmentPage() {
   const modules = [
     {
-      week: 'Wochen 1-4',
-      title: 'Frontend Grundlagen',
-      description: 'HTML5, CSS3, JavaScript ES6+, Responsive Design',
-      skills: ['HTML5 Semantik', 'CSS Grid & Flexbox', 'JavaScript Grundlagen', 'DOM Manipulation', 'Responsive Design', 'Git Versionskontrolle'],
+      week: 'Modul 1 (4 Monate)',
+      title: 'Produktdesign',
+      description: 'UI/UX Design, Designprinzipien, Figma & Framer, Projektmanagement, Produktstrategie',
+      skills: ['UI/UX Design', 'Designprinzipien', 'Figma & Framer', 'Projektmanagement', 'Produktstrategie', 'User Research'],
       icon: Globe
     },
     {
-      week: 'Wochen 5-8',
-      title: 'Frontend Frameworks',
-      description: 'React.js, State Management, Component Architecture',
-      skills: ['React.js Grundlagen', 'JSX & Components', 'State & Props', 'React Hooks', 'Context API', 'Routing mit React Router'],
+      week: 'Modul 2 (3 Monate)',
+      title: 'Web-Grundlagen',
+      description: 'HTML & CSS, Bootstrap, JavaScript & TypeScript, Publishing',
+      skills: ['HTML5 & CSS3', 'Bootstrap Framework', 'JavaScript ES6+', 'TypeScript', 'Responsive Design', 'Git & Publishing'],
       icon: Code
     },
     {
-      week: 'Wochen 9-12',
-      title: 'Backend Development',
-      description: 'Node.js, Express.js, RESTful APIs',
-      skills: ['Node.js Grundlagen', 'Express.js Framework', 'RESTful API Design', 'Middleware', 'Authentication', 'Error Handling'],
+      week: 'Modul 3 (2,5 Monate)',
+      title: 'Frontend-Frameworks',
+      description: 'React, Next.js, Angular/Vue (Einblick), Tailwind CSS, Strapi, Deployment',
+      skills: ['React.js', 'Next.js', 'Angular/Vue Einblick', 'Tailwind CSS', 'Strapi CMS', 'Deployment Strategien'],
       icon: Database
     },
     {
-      week: 'Wochen 13-16',
-      title: 'Datenbanken & Integration',
-      description: 'SQL, MongoDB, API Integration, Testing',
-      skills: ['SQL Grundlagen', 'MongoDB NoSQL', 'Database Design', 'API Integration', 'Testing (Jest)', 'Performance Optimization'],
-      icon: Database
-    },
-    {
-      week: 'Wochen 17-20',
-      title: 'Advanced Topics',
-      description: 'TypeScript, Modern Frameworks, DevOps Basics',
-      skills: ['TypeScript', 'Next.js/Nuxt.js', 'CI/CD Grundlagen', 'Docker Basics', 'Cloud Deployment', 'Code Quality'],
+      week: 'Modul 4 (2,5 Monate)',
+      title: 'Spezialisierung',
+      description: 'Node.js, Express.js, Authentifizierung, Datenbanken, Performance & Automation',
+      skills: ['Node.js & Express.js', 'Authentifizierung', 'Datenbank Design', 'Performance Optimization', 'Automation', 'Testing'],
       icon: Award
-    },
-    {
-      week: 'Wochen 21-24',
-      title: 'Abschlussprojekt',
-      description: 'Portfolio-Projekt, Bewerbungstraining, Zertifizierung',
-      skills: ['Full-Stack Projekt', 'Code Review', 'Dokumentation', 'Präsentation', 'Bewerbungstraining', 'IHK-Zertifizierung'],
-      icon: Star
     }
   ];
 
@@ -83,7 +69,7 @@ export default function WebDevelopmentPage() {
             <div className="space-y-8">
               <div className="inline-flex items-center bg-syntax-yellow-900 text-syntax-primary-900 px-4 py-2 rounded-full text-sm font-medium">
                 <Award className="w-4 h-4 mr-2" />
-                Vollzeit • 6 Monate • IHK-Zertifikat
+                Vollzeit • 12 Monate • IHK-Zertifikat
               </div>
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight font-clash-display">
@@ -92,7 +78,7 @@ export default function WebDevelopmentPage() {
               </h1>
               
               <p className="text-xl text-syntax-purple-100 leading-relaxed">
-                Werde Full-Stack Web Developer in 6 Monaten. Von HTML/CSS bis zu modernen 
+                Werde Full-Stack Web Developer in 12 Monaten. Von HTML/CSS bis zu modernen 
                 Frameworks wie React und Node.js. 100% praxisorientiert mit echten Projekten.
               </p>
 
@@ -108,7 +94,7 @@ export default function WebDevelopmentPage() {
 
               <div className="grid grid-cols-3 gap-6 text-center">
                 <div>
-                  <div className="text-3xl font-bold text-syntax-yellow-900">24</div>
+                  <div className="text-3xl font-bold text-syntax-yellow-900">48</div>
                   <div className="text-sm text-syntax-purple-100">Wochen Intensiv</div>
                 </div>
                 <div>
@@ -149,7 +135,7 @@ export default function WebDevelopmentPage() {
               Dein Lernpfad zum Web Developer
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              In 6 Monaten vom Anfänger zum Full-Stack Developer. Modularer Aufbau mit direktem Praxisbezug.
+              In 12 Monaten vom Anfänger zum Full-Stack Developer. Modularer Aufbau mit direktem Praxisbezug.
             </p>
           </div>
 

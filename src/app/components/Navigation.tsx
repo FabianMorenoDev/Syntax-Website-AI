@@ -31,7 +31,7 @@ export default function Navigation() {
             <div className="flex space-x-4">
               <div className="flex items-center space-x-1">
                 <Phone className="w-4 h-4" />
-                <span>+49 30 75437830</span>
+                <span>+49 30 754378530</span>
               </div>
               <div className="flex items-center space-x-1">
                 <Mail className="w-4 h-4" />

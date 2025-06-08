@@ -140,7 +140,7 @@ export default function Home() {
                 </ul>
                 <div className="flex items-center justify-between pt-4 border-t">
                   <div className="text-sm text-gray-500">
-                    <Clock className="w-4 h-4 inline mr-1" />6 Monate
+                    <Clock className="w-4 h-4 inline mr-1" />12 Monate
                   </div>
                   <Link href="/kurse/web-development">
                     <Button variant="primary">Details</Button>
@@ -165,13 +165,13 @@ export default function Home() {
               </div>
               <div className="p-6 space-y-4">
                 <ul className="space-y-2 text-sm text-gray-600">
-                  <li className="flex items-center"><CheckCircle className="w-4 h-4 text-syntax-green-900 mr-2" />Swift & Kotlin</li>
-                  <li className="flex items-center"><CheckCircle className="w-4 h-4 text-syntax-green-900 mr-2" />React Native</li>
+                  <li className="flex items-center"><CheckCircle className="w-4 h-4 text-syntax-green-900 mr-2" />SwiftUI & Kotlin</li>
+                  <li className="flex items-center"><CheckCircle className="w-4 h-4 text-syntax-green-900 mr-2" />Jetpack Compose</li>
                   <li className="flex items-center"><CheckCircle className="w-4 h-4 text-syntax-green-900 mr-2" />App Store Deployment</li>
                 </ul>
                 <div className="flex items-center justify-between pt-4 border-t">
                   <div className="text-sm text-gray-500">
-                    <Clock className="w-4 h-4 inline mr-1" />6 Monate
+                    <Clock className="w-4 h-4 inline mr-1" />12 Monate
                   </div>
                   <Link href="/kurse/app-development">
                     <Button variant="primary">Details</Button>
@@ -202,7 +202,7 @@ export default function Home() {
                 </ul>
                 <div className="flex items-center justify-between pt-4 border-t">
                   <div className="text-sm text-gray-500">
-                    <Clock className="w-4 h-4 inline mr-1" />6 Monate
+                    <Clock className="w-4 h-4 inline mr-1" />12 Monate
                   </div>
                   <Link href="/kurse/linux-cloud">
                     <Button variant="primary">Details</Button>
@@ -288,7 +288,7 @@ export default function Home() {
                 ))}
               </div>
               <p className="text-gray-700 mb-6 italic">
-                &ldquo;Nach 6 Monaten Web Development bin ich jetzt Frontend Developer bei einem Startup. 
+                &ldquo;Nach dem Web Development Kurs bin ich jetzt Frontend Developer bei einem Startup. 
                 Die Betreuung war hervorragend!&rdquo;
               </p>
               <div className="flex items-center space-x-3">
@@ -376,7 +376,7 @@ export default function Home() {
             <a href="tel:+4930754378530">
               <Button variant="outline" size="xl">
                 <Phone className="w-5 h-5 mr-2" />
-                +49 30 75437830
+                +49 30 754378530
               </Button>
             </a>
           </div>

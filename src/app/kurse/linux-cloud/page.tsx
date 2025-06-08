@@ -11,45 +11,31 @@ export const metadata = {
 export default function LinuxCloudPage() {
   const modules = [
     {
-      week: 'Wochen 1-4',
-      title: 'Linux Grundlagen',
-      description: 'Linux Administration, Shell, Systemverwaltung',
-      skills: ['Linux Distributionen', 'Shell Scripting', 'Dateisystem', 'Prozessverwaltung', 'Netzwerk Basics', 'Sicherheit'],
+      week: 'Modul 1 (3 Monate)',
+      title: 'Grundlagen IT & Betriebssysteme',
+      description: 'IT-Netzwerke, Linux-Grundlagen, IT-Sicherheit, Datenschutz, digitale Werkzeuge',
+      skills: ['IT-Netzwerke', 'Linux-Grundlagen', 'IT-Sicherheit', 'Datenschutz', 'Digitale Werkzeuge', 'IT-Basiskompetenz'],
       icon: Server
     },
     {
-      week: 'Wochen 5-8',
-      title: 'Cloud Computing Basics',
-      description: 'AWS, Azure, Cloud Services, Infrastructure',
-      skills: ['AWS Grundlagen', 'EC2 & VPC', 'S3 & Storage', 'IAM & Security', 'Azure Basics', 'Cloud Architecture'],
+      week: 'Modul 2 (3 Monate)',
+      title: 'Linux, Python & Cloud Basics',
+      description: 'Shell, Python-Programmierung, Einführung AWS/Azure, Container (Docker)',
+      skills: ['Shell Scripting', 'Python-Programmierung', 'AWS/Azure Einführung', 'Container (Docker)', 'Linux Essentials', 'Cloud Basics'],
       icon: Cloud
     },
     {
-      week: 'Wochen 9-12',
-      title: 'Containerization',
-      description: 'Docker, Container Orchestration',
-      skills: ['Docker Grundlagen', 'Dockerfile', 'Docker Compose', 'Container Networks', 'Image Management', 'Security'],
+      week: 'Modul 3 (3 Monate)',
+      title: 'Webtechnologien & Admin-Wissen',
+      description: 'HTML/CSS, GitHub, Webserver, Deployment, Monitoring, Fehleranalyse',
+      skills: ['HTML/CSS', 'GitHub', 'Webserver', 'Deployment', 'Monitoring', 'Fehleranalyse'],
       icon: Settings
     },
     {
-      week: 'Wochen 13-16',
-      title: 'Kubernetes & Orchestration',
-      description: 'Container Orchestration, Microservices',
-      skills: ['Kubernetes Basics', 'Pods & Services', 'Deployments', 'ConfigMaps', 'Ingress', 'Monitoring'],
-      icon: Settings
-    },
-    {
-      week: 'Wochen 17-20',
-      title: 'DevOps & CI/CD',
-      description: 'Automation, Pipelines, Infrastructure as Code',
-      skills: ['CI/CD Pipelines', 'Jenkins/GitLab CI', 'Infrastructure as Code', 'Terraform', 'Ansible', 'Monitoring'],
-      icon: Shield
-    },
-    {
-      week: 'Wochen 21-24',
-      title: 'Advanced Topics & Zertifizierung',
-      description: 'Sicherheit, Compliance, Praxisprojekt',
-      skills: ['Cloud Security', 'Compliance', 'Cost Optimization', 'Troubleshooting', 'Praxisprojekt', 'IHK-Zertifizierung'],
+      week: 'Modul 4 (3 Monate)',
+      title: 'DevOps & Cloud',
+      description: 'CI/CD mit Jenkins, Automatisierung mit Ansible, Terraform, Cloud Deployment',
+      skills: ['CI/CD mit Jenkins', 'Ansible Automatisierung', 'Terraform', 'Cloud Deployment', 'DevOps Praktiken', 'IHK-Zertifizierung'],
       icon: Award
     }
   ];
@@ -87,7 +73,7 @@ export default function LinuxCloudPage() {
             <div className="space-y-8">
               <div className="inline-flex items-center bg-syntax-yellow-900 text-syntax-primary-900 px-4 py-2 rounded-full text-sm font-medium">
                 <Award className="w-4 h-4 mr-2" />
-                Vollzeit • 6 Monate • IHK-Zertifikat
+                Vollzeit • 12 Monate • IHK-Zertifikat
               </div>
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight font-clash-display">
@@ -112,7 +98,7 @@ export default function LinuxCloudPage() {
 
               <div className="grid grid-cols-3 gap-6 text-center">
                 <div>
-                  <div className="text-3xl font-bold text-syntax-yellow-900">24</div>
+                  <div className="text-3xl font-bold text-syntax-yellow-900">48</div>
                   <div className="text-sm text-syntax-blue-100">Wochen Intensiv</div>
                 </div>
                 <div>
