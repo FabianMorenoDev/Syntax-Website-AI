@@ -67,16 +67,16 @@ export default function SuccessStoriesPage() {
   return (
     <main className="min-h-screen pt-8">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-syntax-primary-900 via-syntax-purple-900 to-syntax-primary-700 text-white py-20">
+      <section className="bg-white py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center bg-syntax-yellow-900 text-syntax-primary-900 px-4 py-2 rounded-full text-sm font-medium mb-8">
+          <div className="inline-flex items-center bg-syntax-yellow-900 text-syntax-primary-900 px-4 py-2 rounded-full text-sm font-medium mb-8 hover:bg-syntax-yellow-800 transition-colors">
             <Award className="w-4 h-4 mr-2" />
             1000+ erfolgreiche Karrierewechsel
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 font-clash-display">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 font-clash-display text-syntax-primary-900">
             Erfolgsgeschichten
           </h1>
-          <p className="text-xl text-syntax-purple-100 mb-8">
+          <p className="text-xl text-modern-gray-600 mb-8 max-w-2xl mx-auto">
             Erfahre, wie unsere Absolventen ihre Karriere in der IT erfolgreich gestartet haben. 
             Von Quereinsteigern zu gefragten Fachkräften.
           </p>
@@ -247,21 +247,25 @@ export default function SuccessStoriesPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-syntax-primary-900 to-syntax-purple-900 text-white">
+      <section className="py-20 bg-syntax-primary-50">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 font-clash-display">
-            Deine Erfolgsgeschichte beginnt jetzt
+          <div className="inline-flex items-center bg-syntax-yellow-900 text-syntax-primary-900 px-4 py-2 rounded-full text-sm font-medium mb-8 hover:bg-syntax-yellow-800 transition-colors">
+            <Award className="w-4 h-4 mr-2" />
+            1000+ erfolgreiche Karrierewechsel
+          </div>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 font-clash-display text-syntax-primary-900">
+            Erfolgsgeschichten
           </h2>
-          <p className="text-xl text-syntax-purple-100 mb-8">
-            Werde Teil unserer Erfolgsgeschichten. Starte deine IT-Karriere mit einer 
-            kostenlosen Beratung und finde heraus, welcher Weg für dich der richtige ist.
+          <p className="text-xl text-modern-gray-600 mb-8 max-w-2xl mx-auto">
+            Erfahre, wie unsere Absolventen ihre Karriere in der IT erfolgreich gestartet haben. Von 
+            Quereinsteigern zu gefragten Fachkräften.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="cta" size="xl">
+            <Button variant="accent" size="xl">
               Kostenlose Beratung buchen
               <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
-            <Button variant="outline" size="xl">
+            <Button variant="secondary" size="xl">
               Alle Kurse ansehen
             </Button>
           </div>

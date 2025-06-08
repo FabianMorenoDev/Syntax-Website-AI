@@ -45,20 +45,20 @@ export default function BildungsgutscheinPage() {
   return (
     <main className="min-h-screen pt-8">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-syntax-primary-900 to-syntax-purple-900 text-white py-20">
+      <section className="bg-white py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center bg-syntax-yellow-900 text-syntax-primary-900 px-4 py-2 rounded-full text-sm font-medium mb-8">
+          <div className="inline-flex items-center bg-syntax-yellow-900 text-syntax-primary-900 px-4 py-2 rounded-full text-sm font-medium mb-8 hover:bg-syntax-yellow-800 transition-colors">
             <Award className="w-4 h-4 mr-2" />
             100% Förderung möglich
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 font-clash-display">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 font-clash-display text-syntax-primary-900">
             Bildungsgutschein
           </h1>
-          <p className="text-xl text-syntax-purple-100 mb-8">
+          <p className="text-xl text-modern-gray-600 mb-8 max-w-2xl mx-auto">
             Deine IT-Weiterbildung wird vollständig finanziert. Wir zeigen dir, 
             wie du den Bildungsgutschein beantragst und optimal nutzt.
           </p>
-          <Button variant="cta" size="xl">
+          <Button variant="accent" size="xl">
             Kostenlose Beratung buchen
             <ArrowRight className="w-5 h-5 ml-2" />
           </Button>
@@ -173,7 +173,7 @@ export default function BildungsgutscheinPage() {
             {steps.map((step, index) => (
               <div key={index} className="text-center relative">
                 <div className="relative mb-6">
-                  <div className="w-16 h-16 bg-syntax-purple-900 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto">
+                  <div className="w-16 h-16 bg-syntax-purple-900 text-syntax-primary-900 rounded-full flex items-center justify-center text-xl font-bold mx-auto">
                     {step.number}
                   </div>
                   {index < steps.length - 1 && (
@@ -234,20 +234,25 @@ export default function BildungsgutscheinPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-syntax-primary-900 to-syntax-purple-900 text-white">
+      <section className="py-20 bg-syntax-primary-50">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 font-clash-display">
-            Starte jetzt deine IT-Karriere
+          <div className="inline-flex items-center bg-syntax-yellow-900 text-syntax-primary-900 px-4 py-2 rounded-full text-sm font-medium mb-8 hover:bg-syntax-yellow-800 transition-colors">
+            <Award className="w-4 h-4 mr-2" />
+            100% Förderung möglich
+          </div>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 font-clash-display text-syntax-primary-900">
+            Bildungsgutschein
           </h2>
-          <p className="text-xl text-syntax-purple-100 mb-8">
-            Wir beraten dich kostenlos und unterstützen dich bei der Beantragung deines Bildungsgutscheins.
+          <p className="text-xl text-modern-gray-600 mb-8 max-w-2xl mx-auto">
+            Deine IT-Weiterbildung wird vollständig finanziert. Wir zeigen dir, 
+            wie du den Bildungsgutschein beantragst und optimal nutzt.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="cta" size="xl">
+            <Button variant="accent" size="xl">
               Kostenlose Beratung buchen
               <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
-            <Button variant="outline" size="xl">
+            <Button variant="secondary" size="xl">
               Kurse ansehen
             </Button>
           </div>

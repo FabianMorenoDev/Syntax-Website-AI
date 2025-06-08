@@ -74,7 +74,7 @@ export default function AboutUsPage() {
   return (
     <main className="min-h-screen pt-8">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-syntax-primary-900 via-syntax-purple-900 to-syntax-primary-700 text-white py-20">
+      <section className="bg-gradient-to-br from-syntax-primary-900 via-syntax-purple-900 to-syntax-primary-700 text-syntax-primary-900 py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 font-clash-display">
             Über SYNTAX Institut
@@ -246,12 +246,12 @@ export default function AboutUsPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-r from-syntax-primary-900 to-syntax-purple-900 text-white">
+      <section className="py-20 bg-gradient-to-r from-syntax-primary-900 to-syntax-purple-900 text-syntax-primary-900">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold mb-6 font-clash-display">
             Starte deine IT-Karriere
           </h2>
-          <Button variant="cta" size="xl">
+          <Button variant="accent" size="xl">
             Kostenlose Beratung
             <ArrowRight className="w-5 h-5 ml-2" />
           </Button>

@@ -22,42 +22,70 @@
 }
 
 @theme {
-  /* Syntax Brand Colors */
+  /* Syntax Brand Colors - Modern & Consistent */
   --color-syntax-primary-900: #060f38;
+  --color-syntax-primary-800: #0f1a4a;
   --color-syntax-primary-700: #383f60;
   --color-syntax-primary-500: #6a6f88;
   --color-syntax-primary-300: #9b9faf;
   --color-syntax-primary-100: #cdcfd7;
+  --color-syntax-primary-50: #f8f9fa;
+  --color-syntax-primary-25: #fcfcfd;
   
   --color-syntax-purple-900: #7656fd;
+  --color-syntax-purple-800: #8668fd;
   --color-syntax-purple-700: #9178fd;
   --color-syntax-purple-500: #ad9afe;
   --color-syntax-purple-300: #c8bcfe;
   --color-syntax-purple-100: #e4ddff;
+  --color-syntax-purple-50: #f7f5ff;
+  --color-syntax-purple-25: #fbfaff;
   
   --color-syntax-yellow-900: #fff351;
+  --color-syntax-yellow-800: #fff462;
   --color-syntax-yellow-700: #fff573;
   --color-syntax-yellow-500: #fff796;
   --color-syntax-yellow-300: #fffab9;
   --color-syntax-yellow-100: #fffcdc;
+  --color-syntax-yellow-50: #fffef0;
+  --color-syntax-yellow-25: #fffff8;
   
   --color-syntax-pink-900: #e834b6;
   --color-syntax-pink-700: #ed5dc4;
   --color-syntax-pink-500: #f284d3;
   --color-syntax-pink-300: #f6ade1;
   --color-syntax-pink-100: #fad6f0;
+  --color-syntax-pink-50: #fdedf8;
+  --color-syntax-pink-25: #fef6fc;
   
   --color-syntax-green-900: #56e57d;
   --color-syntax-green-700: #7aea98;
   --color-syntax-green-500: #9aefb1;
   --color-syntax-green-300: #bcf5cb;
   --color-syntax-green-100: #dcfae4;
+  --color-syntax-green-50: #eefcf2;
+  --color-syntax-green-25: #f7fef9;
   
-  --color-syntax-blue-900: #c8ddf2;
-  --color-syntax-blue-700: #d3e4f5;
-  --color-syntax-blue-500: #ddebf7;
-  --color-syntax-blue-300: #e8f1fa;
-  --color-syntax-blue-100: #f4f8fc;
+  --color-syntax-blue-900: #2563eb;
+  --color-syntax-blue-700: #3b82f6;
+  --color-syntax-blue-500: #6366f1;
+  --color-syntax-blue-300: #a5b4fc;
+  --color-syntax-blue-100: #e0e7ff;
+  --color-syntax-blue-50: #eff6ff;
+  --color-syntax-blue-25: #f7fbff;
+
+  /* Modern Grays */
+  --color-modern-gray-900: #111827;
+  --color-modern-gray-800: #1f2937;
+  --color-modern-gray-700: #374151;
+  --color-modern-gray-600: #4b5563;
+  --color-modern-gray-500: #6b7280;
+  --color-modern-gray-400: #9ca3af;
+  --color-modern-gray-300: #d1d5db;
+  --color-modern-gray-200: #e5e7eb;
+  --color-modern-gray-100: #f3f4f6;
+  --color-modern-gray-50: #f9fafb;
+  --color-modern-gray-25: #fcfdfe;
 
   /* Syntax Brand Fonts */
   --font-family-clash-display: 'ClashDisplay', ui-serif, serif;
@@ -71,4 +99,26 @@
 
 .font-clash-grotesk {
   font-family: var(--font-family-clash-grotesk);
+}
+
+/* Modern Micro-Interactions - Disabled for now
+.modern-card {
+  @apply bg-white rounded-xl shadow-sm border border-modern-gray-200 transition-all duration-200 hover:shadow-lg hover:border-modern-gray-300;
+}
+
+.modern-card-interactive {
+  @apply modern-card hover:scale-[1.02] cursor-pointer;
+}
+*/
+
+.modern-button-primary {
+  @apply bg-syntax-primary-900 hover:bg-syntax-primary-800 text-white font-medium transition-all duration-200 hover:shadow-lg active:scale-95;
+}
+
+.modern-button-secondary {
+  @apply bg-white hover:bg-modern-gray-50 text-syntax-primary-900 border border-modern-gray-300 hover:border-syntax-primary-900 font-medium transition-all duration-200 hover:shadow-sm;
+}
+
+.modern-button-accent {
+  @apply bg-syntax-yellow-900 hover:bg-syntax-yellow-800 text-syntax-primary-900 font-bold transition-all duration-200 hover:shadow-lg active:scale-95;
 } 

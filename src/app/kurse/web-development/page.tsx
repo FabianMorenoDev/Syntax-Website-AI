@@ -63,7 +63,7 @@ export default function WebDevelopmentPage() {
   return (
     <main className="min-h-screen pt-8">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-syntax-primary-900 via-syntax-purple-900 to-syntax-purple-700 text-white py-20">
+      <section className="bg-gradient-to-br from-syntax-primary-900 via-syntax-purple-900 to-syntax-purple-700 text-syntax-primary-900 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
@@ -83,7 +83,7 @@ export default function WebDevelopmentPage() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button variant="cta" size="xl">
+                <Button variant="accent" size="xl">
                   Kostenlose Beratung buchen
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
@@ -366,7 +366,7 @@ export default function WebDevelopmentPage() {
                     </div>
                   </div>
 
-                  <Button variant="cta" size="lg" fullWidth>
+                  <Button variant="accent" size="lg" fullWidth>
                     Kostenlose Beratung
                     <ArrowRight className="w-4 h-4 ml-2" />
                   </Button>
@@ -400,7 +400,7 @@ export default function WebDevelopmentPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-purple-900 to-indigo-900 text-white">
+      <section className="py-20 bg-gradient-to-r from-purple-900 to-indigo-900 text-syntax-primary-900">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 font-clash-display">
             Starte deine Web Developer Karriere
@@ -410,7 +410,7 @@ export default function WebDevelopmentPage() {
             100% gefördert mit Bildungsgutschein.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="cta" size="xl">
+            <Button variant="accent" size="xl">
               Kostenlose Beratung buchen
               <ArrowRight className="w-5 h-5 ml-2" />
             </Button>

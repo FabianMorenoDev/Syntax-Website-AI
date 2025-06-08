@@ -32,7 +32,7 @@ export default function Footer() {
               alt="Syntax Institut" 
               className="h-8 w-auto"
             />
-            <p className="text-syntax-primary-100 text-sm leading-relaxed">
+            <p className="text-gray-300 text-sm leading-relaxed">
               Professionelle IT-Weiterbildungen mit Bildungsgutschein. 
               100% kostenlos und AZAV-zertifiziert.
             </p>
@@ -58,7 +58,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link 
                     href={link.href}
-                    className="text-syntax-primary-100 hover:text-syntax-yellow-900 text-sm transition-colors"
+                    className="text-gray-300 hover:text-syntax-yellow-900 text-sm transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -75,7 +75,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link 
                     href={link.href}
-                    className="text-syntax-primary-100 hover:text-syntax-yellow-900 text-sm transition-colors"
+                    className="text-gray-300 hover:text-syntax-yellow-900 text-sm transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -91,28 +91,28 @@ export default function Footer() {
               <div className="flex items-start space-x-2">
                 <Phone className="w-4 h-4 mt-0.5 text-syntax-yellow-900" />
                 <div>
-                  <p className="text-syntax-primary-100 text-sm">+49 30 754378530</p>
-                  <p className="text-syntax-primary-300 text-xs">Kostenlose Hotline</p>
+                  <p className="text-gray-300 text-sm">+49 30 754378530</p>
+                  <p className="text-gray-400 text-xs">Kostenlose Hotline</p>
                 </div>
               </div>
               <div className="flex items-start space-x-2">
                 <Mail className="w-4 h-4 mt-0.5 text-syntax-yellow-900" />
                 <div>
-                  <p className="text-syntax-primary-100 text-sm">hallo@syntax-institut.de</p>
+                  <p className="text-gray-300 text-sm">hallo@syntax-institut.de</p>
                 </div>
               </div>
               <div className="flex items-start space-x-2">
                 <MapPin className="w-4 h-4 mt-0.5 text-syntax-yellow-900" />
                 <div>
-                  <p className="text-syntax-primary-100 text-sm">Berlin • Hamburg • München</p>
-                  <p className="text-syntax-primary-300 text-xs">Online & vor Ort</p>
+                  <p className="text-gray-300 text-sm">Berlin • Hamburg • München</p>
+                  <p className="text-gray-400 text-xs">Online & vor Ort</p>
                 </div>
               </div>
               <div className="flex items-start space-x-2">
                 <Clock className="w-4 h-4 mt-0.5 text-syntax-yellow-900" />
                 <div>
-                  <p className="text-syntax-primary-100 text-sm">Mo-Fr: 9:00-18:00</p>
-                  <p className="text-syntax-primary-300 text-xs">Beratungszeiten</p>
+                  <p className="text-gray-300 text-sm">Mo-Fr: 9:00-18:00</p>
+                  <p className="text-gray-400 text-xs">Beratungszeiten</p>
                 </div>
               </div>
             </div>
@@ -127,13 +127,13 @@ export default function Footer() {
                 <Link 
                   key={link.href}
                   href={link.href}
-                  className="text-syntax-primary-300 hover:text-syntax-yellow-900 text-xs transition-colors"
+                  className="text-gray-400 hover:text-syntax-yellow-900 text-xs transition-colors"
                 >
                   {link.label}
                 </Link>
               ))}
             </div>
-            <p className="text-syntax-primary-300 text-xs">
+            <p className="text-gray-400 text-xs">
               © 2024 SYNTAX Institut. Alle Rechte vorbehalten.
             </p>
           </div>
