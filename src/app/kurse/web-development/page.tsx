@@ -3,7 +3,7 @@ import { ArrowRight, CheckCircle, Clock, Users, Award, Star, Code, Globe, Databa
 import Button from '../../components/ui/Button';
 
 export const metadata = {
-  title: 'Web Development Kurs - SYNTAX Institut | Vollzeit Weiterbildung mit Bildungsgutschein',
+  title: 'Web Development Kurs - Syntax Institut | Vollzeit Weiterbildung mit Bildungsgutschein',
   description: 'Werde Full-Stack Web Developer in 6 Monaten. HTML, CSS, JavaScript, React, Node.js. 100% gefördert mit Bildungsgutschein. AZAV-zertifiziert, IHK-Abschluss.',
   keywords: 'Web Development, Frontend, Backend, React, Node.js, JavaScript, HTML, CSS, Bildungsgutschein, Weiterbildung, AZAV',
 };

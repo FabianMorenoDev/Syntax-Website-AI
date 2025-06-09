@@ -3,7 +3,7 @@ import { ArrowRight, CheckCircle, Clock, Users, Award, Star, Smartphone, Tablet,
 import Button from '../../components/ui/Button';
 
 export const metadata = {
-  title: 'App Development Kurs - SYNTAX Institut | iOS & Android Entwicklung mit Bildungsgutschein',
+  title: 'App Development Kurs - Syntax Institut | iOS & Android Entwicklung mit Bildungsgutschein',
   description: 'Werde Mobile App Developer in 6 Monaten. iOS, Android, React Native, Flutter. 100% gefördert mit Bildungsgutschein. AZAV-zertifiziert, IHK-Abschluss.',
   keywords: 'App Development, iOS, Android, React Native, Flutter, Swift, Kotlin, Bildungsgutschein, Mobile Development, AZAV',
 };

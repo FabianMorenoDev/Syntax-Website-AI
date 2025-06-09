@@ -3,7 +3,7 @@ import { ArrowRight, CheckCircle, Clock, Users, Award, Target, BookOpen, Puzzle 
 import Button from '../components/ui/Button';
 
 export const metadata = {
-  title: 'IT-Karrierepfade - SYNTAX Institut | Empfohlene Kurssequenzen',
+  title: 'IT-Karrierepfade - Syntax Institut | Empfohlene Kurssequenzen',
   description: 'Entdecke unsere empfohlenen IT-Karrierepfade. Modulare Weiterbildung in Web Development, App Development und Linux & Cloud Engineering.',
   keywords: 'Karrierepfade, IT-Weiterbildung, Web Development, App Development, Linux Cloud, modulare Kompetenzkurse, Bildungsgutschein',
 };

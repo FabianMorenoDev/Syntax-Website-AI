@@ -3,7 +3,7 @@ import { ArrowRight, CheckCircle, Clock, Users, Award, Star, Server, Cloud, Shie
 import Button from '../../components/ui/Button';
 
 export const metadata = {
-  title: 'Linux & Cloud Engineering Kurs - SYNTAX Institut | DevOps Weiterbildung mit Bildungsgutschein',
+  title: 'Linux & Cloud Engineering Kurs - Syntax Institut | DevOps Weiterbildung mit Bildungsgutschein',
   description: 'Werde DevOps Engineer in 6 Monaten. Linux, AWS, Docker, Kubernetes. 100% gefördert mit Bildungsgutschein. AZAV-zertifiziert, IHK-Abschluss.',
   keywords: 'Linux, Cloud Engineering, DevOps, AWS, Docker, Kubernetes, Infrastructure, Bildungsgutschein, Weiterbildung, AZAV',
 };

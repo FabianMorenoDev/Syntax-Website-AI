@@ -19,7 +19,7 @@ export function generateMetadata({
   ogType = 'website'
 }: SEOProps): Metadata {
   const baseUrl = 'https://syntax-institut.de';
-  const fullTitle = title.includes('SYNTAX Institut') ? title : `${title} | SYNTAX Institut`;
+  const fullTitle = title.includes('Syntax Institut') ? title : `${title} | Syntax Institut`;
   
   return {
     title: fullTitle,
@@ -33,7 +33,7 @@ export function generateMetadata({
       title: fullTitle,
       description,
       url: canonicalUrl ? `${baseUrl}${canonicalUrl}` : baseUrl,
-      siteName: 'SYNTAX Institut',
+      siteName: 'Syntax Institut',
       images: [
         {
           url: ogImage,
@@ -78,7 +78,7 @@ export function generateStructuredData(type: 'organization' | 'course' | 'articl
       return {
         ...baseStructuredData,
         '@type': 'Organization',
-        name: 'SYNTAX Institut',
+        name: 'Syntax Institut',
         url: 'https://syntax-institut.de',
         logo: 'https://syntax-institut.de/images/icons/syntax-logo-light.svg',
         description: 'AZAV-zertifizierte IT-Weiterbildungen mit Bildungsgutschein. Web Development, App Development, Linux & Cloud Engineering.',
@@ -107,7 +107,7 @@ export function generateStructuredData(type: 'organization' | 'course' | 'articl
         description: data.description,
         provider: {
           '@type': 'Organization',
-          name: 'SYNTAX Institut',
+          name: 'Syntax Institut',
           url: 'https://syntax-institut.de'
         },
         educationalLevel: 'Professional',
@@ -131,11 +131,11 @@ export function generateStructuredData(type: 'organization' | 'course' | 'articl
         description: data.description,
         author: {
           '@type': 'Organization',
-          name: 'SYNTAX Institut'
+          name: 'Syntax Institut'
         },
         publisher: {
           '@type': 'Organization',
-          name: 'SYNTAX Institut',
+          name: 'Syntax Institut',
           logo: {
             '@type': 'ImageObject',
             url: 'https://syntax-institut.de/images/icons/syntax-logo-light.svg'

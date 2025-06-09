@@ -52,7 +52,7 @@ export default function Footer() {
 
           {/* Courses */}
           <div className="space-y-4">
-            <h3 className="text-lg font-medium text-white">Kurse</h3>
+            <h3 className="text-lg font-medium text-white">Karrierepfade</h3>
             <ul className="space-y-2">
               {courseLinks.map((link) => (
                 <li key={link.href}>
@@ -104,8 +104,7 @@ export default function Footer() {
               <div className="flex items-start space-x-2">
                 <MapPin className="w-4 h-4 mt-0.5 text-syntax-yellow-900" />
                 <div>
-                  <p className="text-gray-300 text-sm">Berlin • Hamburg • München</p>
-                  <p className="text-gray-400 text-xs">Online & vor Ort</p>
+                  <p className="text-gray-300 text-sm">Berlin</p>
                 </div>
               </div>
               <div className="flex items-start space-x-2">
@@ -134,7 +133,7 @@ export default function Footer() {
               ))}
             </div>
             <p className="text-gray-400 text-xs">
-              © 2024 SYNTAX Institut. Alle Rechte vorbehalten.
+              © 2025 Syntax Institut. Alle Rechte vorbehalten.
             </p>
           </div>
         </div>

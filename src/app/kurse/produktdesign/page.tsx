@@ -3,7 +3,7 @@ import { ArrowRight, CheckCircle, Clock, Users, Award, Star, Palette, Users2, Ta
 import Button from '../../components/ui/Button';
 
 export const metadata = {
-  title: 'Produktdesign Kurs - SYNTAX Institut | UI/UX Design Weiterbildung mit Bildungsgutschein',
+  title: 'Produktdesign Kurs - Syntax Institut | UI/UX Design Weiterbildung mit Bildungsgutschein',
   description: 'Werde Junior Product Designer in 4 Monaten. UI/UX Design, Figma, Framer, Projektmanagement. 100% gefördert mit Bildungsgutschein. AZAV-zertifiziert, IHK-Abschluss.',
   keywords: 'Produktdesign, UI UX Design, Figma, Framer, Projektmanagement, Produktstrategie, Bildungsgutschein, IHK-Zertifikat',
 };

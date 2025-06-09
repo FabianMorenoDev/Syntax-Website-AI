@@ -3,7 +3,7 @@ import { ArrowRight, CheckCircle, Clock, Users, Award, Star, Smartphone, Code, Z
 import Button from '../../components/ui/Button';
 
 export const metadata = {
-  title: 'iOS App-Entwicklung Kurs - SYNTAX Institut | SwiftUI Weiterbildung mit Bildungsgutschein',
+  title: 'iOS App-Entwicklung Kurs - Syntax Institut | SwiftUI Weiterbildung mit Bildungsgutschein',
   description: 'Werde iOS App Developer in 2,5 Monaten. SwiftUI, SwiftData, iOS SDK. 100% gefördert mit Bildungsgutschein. AZAV-zertifiziert, IHK-Abschluss.',
   keywords: 'iOS App Entwicklung, SwiftUI, SwiftData, iOS SDK, Swift, Xcode, App Store, Bildungsgutschein, IHK-Zertifikat',
 };

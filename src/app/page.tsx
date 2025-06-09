@@ -63,9 +63,9 @@ export default function Home() {
               <div className="absolute -bottom-4 -left-4 lg:-bottom-6 lg:-left-6 bg-white p-4 lg:p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-200">
                 <div className="flex items-center space-x-3 lg:space-x-4">
                   <div className="flex -space-x-2">
-                    <img src="/images/company/felix_ceo.webp" alt="Felix CEO" className="w-8 h-8 lg:w-10 lg:h-10 rounded-full border-2 border-white object-cover" />
-                    <img src="/images/company/basti_sales.png" alt="Basti" className="w-8 h-8 lg:w-10 lg:h-10 rounded-full border-2 border-white object-cover" />
-                    <img src="/images/company/dusko_sales.jpg" alt="Dusko" className="w-8 h-8 lg:w-10 lg:h-10 rounded-full border-2 border-white object-cover" />
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&w=100&h=100&fit=crop&crop=face&auto=format&q=80" alt="Erfolgreicher Absolvent" className="w-8 h-8 lg:w-10 lg:h-10 rounded-full border-2 border-white object-cover" />
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face&auto=format&q=80" alt="Erfolgreiche Absolventin" className="w-8 h-8 lg:w-10 lg:h-10 rounded-full border-2 border-white object-cover" />
+                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&w=100&h=100&fit=crop&crop=face&auto=format&q=80" alt="Erfolgreicher Absolvent" className="w-8 h-8 lg:w-10 lg:h-10 rounded-full border-2 border-white object-cover" />
                   </div>
                   <div>
                     <div className="flex text-syntax-yellow-900">

@@ -61,7 +61,7 @@ export default function Navigation() {
     { href: '/karrierepfade', icon: '🤖', title: 'KI orientierte Web-Entwicklung', subtitle: 'Produktdesign → Web Grundlagen → Frontend → Backend', emoji: '🤖' },
     { href: '/karrierepfade', icon: '📱', title: 'Mobile-App Entwicklung', subtitle: 'UX/UI → Programmierung → iOS → Android', emoji: '📱' },
     { href: '/karrierepfade', icon: '☁️', title: 'Linux, Cloud & Web', subtitle: 'IT Grundlagen → Development → Linux → Cloud', emoji: '☁️' },
-    { href: '/karrierepfad-konfigurator', icon: '🎯', title: 'Eigenen Karrierepfad zusammenstellen', subtitle: 'Deine individuelle Kombination', emoji: '⚡', isCustom: true },
+    { href: '/karrierepfad-konfigurator', icon: '🧩', title: 'Eigenen Karrierepfad zusammenstellen', subtitle: 'Deine individuelle Kombination', emoji: '🧩', isCustom: true },
   ];
 
   const courseCategories = {
@@ -157,7 +157,7 @@ export default function Navigation() {
                               className={`group/path cursor-pointer p-3 rounded-lg transition-all duration-200 border ${
                                 index === selectedCareerPath 
                                   ? 'bg-syntax-purple-50 border-syntax-purple-200 shadow-sm' 
-                                  : 'bg-modern-gray-50 border-transparent hover:bg-syntax-purple-50 hover:border-syntax-purple-100 hover:shadow-sm'
+                                  : 'border-transparent hover:bg-syntax-purple-50 hover:border-syntax-purple-100 hover:shadow-sm'
                               }`}
                               onClick={() => setSelectedCareerPath(index)}
                               onMouseEnter={() => setSelectedCareerPath(index)}

@@ -65,7 +65,7 @@ export default function AboutUsPage() {
   ];
 
   const milestones = [
-    { year: '2021', event: 'Gründung von SYNTAX Institut', description: 'Start im September mit modularen IT-Weiterbildungen' },
+    { year: '2021', event: 'Gründung von Syntax Institut', description: 'Start im September mit modularen IT-Weiterbildungen' },
     { year: '2022', event: 'AZAV-Zertifizierung', description: 'Offizielle Anerkennung als Bildungsträger' },
     { year: '2023', event: 'IHK-Partnerschaft', description: 'Anerkannte Zertifizierungen für alle Lernpfade' },
     { year: '2024', event: '1000+ Erfolgsgeschichten', description: 'Marktführer in modularer IT-Weiterbildung' }
@@ -77,7 +77,7 @@ export default function AboutUsPage() {
       <section className="bg-gradient-to-br from-syntax-primary-900 via-syntax-purple-900 to-syntax-primary-700 text-syntax-primary-900 py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 font-clash-display">
-            Über SYNTAX Institut
+            Über Syntax Institut
           </h1>
           <p className="text-xl text-syntax-purple-100 mb-8">
             Pioniere in der IT-Weiterbildung mit über 1000 erfolgreichen Karrierewechslern
@@ -101,7 +101,7 @@ export default function AboutUsPage() {
             <div>
               <img 
                 src="/images/stock/co-working-people-working-together.jpg" 
-                alt="SYNTAX Institut" 
+                alt="Syntax Institut" 
                 className="rounded-lg shadow-lg"
               />
             </div>
