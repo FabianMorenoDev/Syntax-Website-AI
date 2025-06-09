@@ -1,5 +1,6 @@
 import { Users, Award, Target, Heart, CheckCircle, ArrowRight } from 'lucide-react';
 import Button from '../components/ui/Button';
+import PageHero from '../components/PageHero';
 
 export default function AboutUsPage() {
   const team = [
@@ -68,26 +69,20 @@ export default function AboutUsPage() {
     { year: '2021', event: 'Gründung von Syntax Institut', description: 'Start im September mit modularen IT-Weiterbildungen' },
     { year: '2022', event: 'AZAV-Zertifizierung', description: 'Offizielle Anerkennung als Bildungsträger' },
     { year: '2023', event: 'IHK-Partnerschaft', description: 'Anerkannte Zertifizierungen für alle Lernpfade' },
-    { year: '2024', event: '1000+ Erfolgsgeschichten', description: 'Marktführer in modularer IT-Weiterbildung' }
+    { year: '2024', event: '800+ Erfolgsgeschichten', description: 'Marktführer in modularer IT-Weiterbildung' }
   ];
 
   return (
-    <main className="min-h-screen pt-8">
-      {/* Hero Section */}
-      <section className="bg-white py-20">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center bg-syntax-yellow-900 text-syntax-primary-900 px-4 py-2 rounded-full text-sm font-medium mb-8 hover:bg-syntax-yellow-800 transition-colors">
-            <Users className="w-4 h-4 mr-2" />
-            Über 1000 erfolgreiche Absolventen
-          </div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 font-clash-display text-syntax-primary-900">
-            Über Syntax Institut
-          </h1>
-          <p className="text-xl text-modern-gray-600 mb-8">
-            Pioniere in der IT-Weiterbildung mit über 1000 erfolgreichen Karrierewechslern
-          </p>
-        </div>
-      </section>
+    <main className="min-h-screen">
+      <PageHero
+        title="Über das Syntax Institut"
+        subtitle="Pioniere in der IT-Weiterbildung mit über 800 erfolgreichen Karrierewechslern"
+        badge={{
+          icon: Users,
+          text: "Über 800 erfolgreiche Absolventen"
+        }}
+        backgroundImage="https://www.syntax-institut.de/wp-content/uploads/2025/01/berlin-eventfotografSyntax1-scaled.jpg"
+      />
 
       {/* Mission */}
       <section className="py-20">
@@ -98,13 +93,16 @@ export default function AboutUsPage() {
                 Unsere Mission
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed">
-                Wir demokratisieren den Zugang zu hochwertiger IT-Bildung und begleiten Menschen 
-                erfolgreich in ihre neue digitale Karriere.
+              Das Syntax Institut wurde im September 2021 in Berlin gegründet. Unser Ziel: Wir wollen den Zugang zu hochwertiger IT-Bildung demokratisieren und Menschen erfolgreich in ihre neue digitale Karriere begleiten.
+              <br /><br />
+              Unsere Kurse finden online statt und richten sich an alle, die sich beruflich weiterentwickeln möchten.
+              <br /><br />
+              Im Rahmen unserer aktiven Arbeitsmarktpolitik legen wir großen Wert auf eine sorgfältige Umsetzung unserer Angebote. Unser Ziel ist es, die Teilnehmenden nachhaltig bei der Verbesserung ihrer Beschäftigungschancen zu unterstützen und ihnen so den Weg in eine langfristige Integration in den Arbeitsmarkt zu ebnen.
               </p>
             </div>
             <div>
               <img 
-                src="/images/stock/co-working-people-working-together.jpg" 
+                src="https://www.syntax-institut.de/wp-content/uploads/2023/02/team09-scaled.jpg" 
                 alt="Syntax Institut" 
                 className="rounded-lg shadow-lg"
               />
@@ -249,18 +247,7 @@ export default function AboutUsPage() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-20 bg-gradient-to-r from-syntax-primary-900 to-syntax-purple-900 text-syntax-primary-900">
-        <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold mb-6 font-clash-display">
-            Starte deine IT-Karriere
-          </h2>
-          <Button variant="accent" size="xl">
-            Kostenlose Beratung
-            <ArrowRight className="w-5 h-5 ml-2" />
-          </Button>
-        </div>
-      </section>
+      
     </main>
   );
 } 

@@ -11,7 +11,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start min-h-[500px]">
             <div className="space-y-5 lg:space-y-7 order-2 lg:order-1">
                               <Link href="/bildungsgutschein">
-                  <div className="inline-flex items-center bg-syntax-blue-50 backdrop-blur-sm border border-syntax-primary-300 text-syntax-primary-700 px-3 py-1.5 rounded-full text-xs font-medium hover:bg-syntax-blue-100 hover:border-syntax-primary-200 transition-all duration-300 cursor-pointer mb-3">
+                  <div className="inline-flex items-center bg-syntax-blue-50 backdrop-blur-sm border border-syntax-primary-300 text-syntax-primary-700 px-4 py-2 rounded-full text-sm font-medium hover:bg-syntax-blue-100 hover:border-syntax-primary-200 transition-all duration-300 cursor-pointer mb-7">
                     <Award className="w-3 h-3 mr-1.5 text-syntax-purple-600" />
                     100% kostenlos mit Bildungsgutschein
                   </div>

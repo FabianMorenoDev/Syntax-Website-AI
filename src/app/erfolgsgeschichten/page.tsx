@@ -1,5 +1,6 @@
 import { Star, ArrowRight, Award, Briefcase, TrendingUp } from 'lucide-react';
 import Button from '../components/ui/Button';
+import PageHero from '../components/PageHero';
 
 export default function SuccessStoriesPage() {
   const stories = [
@@ -61,27 +62,20 @@ export default function SuccessStoriesPage() {
     { number: '95%', label: 'Vermittlungsquote', description: 'unserer Absolventen finden binnen 6 Monaten einen Job' },
     { number: '4.200€', label: 'Durchschnittsgehalt', description: 'Einstiegsgehalt unserer Absolventen' },
     { number: '89%', label: 'Weiterempfehlung', description: 'würden uns weiterempfehlen' },
-    { number: '1000+', label: 'Erfolgreiche Absolventen', description: 'haben ihre IT-Karriere bei uns gestartet' }
+    { number: '800+', label: 'Erfolgreiche Absolventen', description: 'haben ihre IT-Karriere bei uns gestartet' }
   ];
 
   return (
-    <main className="min-h-screen pt-8">
-      {/* Hero Section */}
-      <section className="bg-white py-20">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center bg-syntax-yellow-900 text-syntax-primary-900 px-4 py-2 rounded-full text-sm font-medium mb-8 hover:bg-syntax-yellow-800 transition-colors">
-            <Award className="w-4 h-4 mr-2" />
-            1000+ erfolgreiche Karrierewechsel
-          </div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 font-clash-display text-syntax-primary-900">
-            Erfolgsgeschichten
-          </h1>
-          <p className="text-xl text-modern-gray-600 mb-8 max-w-2xl mx-auto">
-            Erfahre, wie unsere Absolventen ihre Karriere in der IT erfolgreich gestartet haben. 
-            Von Quereinsteigern zu gefragten Fachkräften.
-          </p>
-        </div>
-      </section>
+    <main className="min-h-screen">
+      <PageHero
+        title="Erfolgsgeschichten"
+        subtitle="Erfahre, wie unsere Absolventen ihre Karriere in der IT erfolgreich gestartet haben. Von Quereinsteigern zu gefragten Fachkräften."
+        badge={{
+          icon: Award,
+          text: "800+ erfolgreiche Karrierewechsel"
+        }}
+        backgroundImage="/images/stock/menschen-die-spass-ihrer-pause-haben.jpg"
+      />
 
       {/* Statistics */}
       <section className="py-20 bg-gray-50">
@@ -251,7 +245,7 @@ export default function SuccessStoriesPage() {
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <div className="inline-flex items-center bg-syntax-yellow-900 text-syntax-primary-900 px-4 py-2 rounded-full text-sm font-medium mb-8 hover:bg-syntax-yellow-800 transition-colors">
             <Award className="w-4 h-4 mr-2" />
-            1000+ erfolgreiche Karrierewechsel
+            800+ erfolgreiche Karrierewechsel
           </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-6 font-clash-display text-syntax-primary-900">
             Erfolgsgeschichten

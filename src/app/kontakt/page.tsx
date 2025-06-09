@@ -1,39 +1,19 @@
 import { Phone, Mail, MapPin, Clock, CheckCircle } from 'lucide-react';
 import Button from '../components/ui/Button';
+import PageHero from '../components/PageHero';
 
 export default function ContactPage() {
   return (
-    <main className="min-h-screen pt-8">
-      {/* Hero Section */}
-      <section className="bg-white py-20">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center bg-syntax-yellow-900 text-syntax-primary-900 px-4 py-2 rounded-full text-sm font-medium mb-8 hover:bg-syntax-yellow-800 transition-colors">
-            <Phone className="w-4 h-4 mr-2" />
-            100% kostenlos
-          </div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 font-clash-display text-syntax-primary-900">
-            Kostenlose Beratung buchen
-          </h1>
-          <p className="text-xl text-modern-gray-600 mb-8 max-w-2xl mx-auto">
-            Lass dich unverbindlich beraten und finde die passende IT-Weiterbildung für deine Ziele. 
-            Wir helfen dir auch bei der Beantragung des Bildungsgutscheins.
-          </p>
-          <div className="flex items-center justify-center space-x-8 text-sm text-modern-gray-500">
-            <div className="flex items-center space-x-2">
-              <CheckCircle className="w-4 h-4 text-syntax-green-900" />
-              <span>100% kostenlos</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <CheckCircle className="w-4 h-4 text-syntax-green-900" />
-              <span>Unverbindlich</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <CheckCircle className="w-4 h-4 text-syntax-green-900" />
-              <span>Persönlich</span>
-            </div>
-          </div>
-        </div>
-      </section>
+    <main className="min-h-screen">
+      <PageHero
+        title="Kostenlose Beratung buchen"
+        subtitle="Lass dich unverbindlich beraten und finde die passende IT-Weiterbildung für deine Ziele. Wir helfen dir auch bei der Beantragung des Bildungsgutscheins."
+        badge={{
+          icon: Phone,
+          text: "100% kostenlos"
+        }}
+        backgroundImage="/images/stock/menschen-die-spass-ihrer-pause-haben.jpg"
+      />
 
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

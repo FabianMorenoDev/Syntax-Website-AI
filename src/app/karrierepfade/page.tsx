@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { ArrowRight, CheckCircle, Clock, Users, Award, Target, BookOpen, Puzzle } from 'lucide-react';
 import Button from '../components/ui/Button';
+import PageHero from '../components/PageHero';
 
 export const metadata = {
   title: 'IT-Karrierepfade - Syntax Institut | Empfohlene Kurssequenzen',
@@ -145,36 +146,16 @@ export default function KarrierepfadePage() {
   ];
 
   return (
-    <main className="min-h-screen pt-8">
-      {/* Hero Section */}
-      <section className="bg-white py-20 overflow-hidden">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center bg-syntax-yellow-900 text-syntax-primary-900 px-4 py-2 rounded-full text-sm font-medium mb-8 hover:bg-syntax-yellow-800 transition-colors">
-            <Target className="w-4 h-4 mr-2" />
-            Modulare IT-Weiterbildung
-          </div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 font-clash-display text-syntax-primary-900">
-            IT-Karrierepfade
-          </h1>
-          <p className="text-xl text-modern-gray-600 mb-8">
-            Empfohlene Kompetenzkurs-Sequenzen für deine IT-Karriere. Flexibel kombinierbar, 
-            einzeln buchbar und 100% gefördert.
-          </p>
-                      <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/kurse">
-                <Button variant="accent" size="xl">
-                  Alle Kompetenzkurse ansehen
-                  <ArrowRight className="w-5 h-5 ml-2" />
-                </Button>
-              </Link>
-              <Link href="/kontakt">
-                <Button variant="outline" size="xl">
-                  Kostenlose Beratung
-                </Button>
-              </Link>
-            </div>
-        </div>
-      </section>
+    <main className="min-h-screen">
+      <PageHero
+        title="IT-Karrierepfade"
+        subtitle="Empfohlene Kompetenzkurs-Sequenzen für deine IT-Karriere. Flexibel kombinierbar, einzeln buchbar und 100% gefördert."
+        badge={{
+          icon: Target,
+          text: "Modulare IT-Weiterbildung"
+        }}
+        backgroundImage="/images/stock/colleagues-discussing-new-ideas-business-meeting.jpg"
+      />
 
       {/* Benefits */}
       <section className="py-16 bg-gray-50">

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { ArrowRight, CheckCircle, Clock, Users, Award, Star, Code, Globe, Database, Smartphone } from 'lucide-react';
 import Button from '../../components/ui/Button';
+import PageHero from '../../components/PageHero';
 
 export const metadata = {
   title: 'Web Development Kurs - Syntax Institut | Vollzeit Weiterbildung mit Bildungsgutschein',
@@ -61,71 +62,16 @@ export default function WebDevelopmentPage() {
   ];
 
   return (
-    <main className="min-h-screen pt-8">
-      {/* Hero Section */}
-      <section className="bg-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8">
-              <div className="inline-flex items-center bg-syntax-yellow-900 text-syntax-primary-900 px-4 py-2 rounded-full text-sm font-medium hover:bg-syntax-yellow-800 transition-colors">
-                <Award className="w-4 h-4 mr-2" />
-                Vollzeit • 12 Monate • IHK-Zertifikat
-              </div>
-              
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight font-clash-display text-syntax-primary-900">
-                Web Development
-                <span className="block text-syntax-yellow-900">Weiterbildung</span>
-              </h1>
-              
-              <p className="text-xl text-modern-gray-600 leading-relaxed">
-                Werde Full-Stack Web Developer in 12 Monaten. Von HTML/CSS bis zu modernen 
-                Frameworks wie React und Node.js. 100% praxisorientiert mit echten Projekten.
-              </p>
-
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button variant="accent" size="xl">
-                  Kostenlose Beratung buchen
-                  <ArrowRight className="w-5 h-5 ml-2" />
-                </Button>
-                <Button variant="outline" size="xl">
-                  Infopaket herunterladen
-                </Button>
-              </div>
-
-                              <div className="grid grid-cols-3 gap-6 text-center">
-                <div>
-                  <div className="text-3xl font-bold text-syntax-yellow-900">48</div>
-                  <div className="text-sm text-modern-gray-600">Wochen Intensiv</div>
-                </div>
-                <div>
-                  <div className="text-3xl font-bold text-syntax-yellow-900">100%</div>
-                  <div className="text-sm text-modern-gray-600">Förderung möglich</div>
-                </div>
-                <div>
-                  <div className="text-3xl font-bold text-syntax-yellow-900">95%</div>
-                  <div className="text-sm text-modern-gray-600">Vermittlungsquote</div>
-                </div>
-              </div>
-            </div>
-
-            <div className="relative">
-              <div className="aspect-[4/3] lg:aspect-[3/4] xl:aspect-[4/3] overflow-hidden rounded-lg shadow-2xl">
-                <img 
-                  src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" 
-                  alt="Web Development Code auf Monitor" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-lg shadow-lg">
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-syntax-primary-900">45.000€</div>
-                  <div className="text-sm text-gray-600">Ø Einstiegsgehalt</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    <main className="min-h-screen">
+      <PageHero
+        title="Web Development Weiterbildung"
+        subtitle="Werde Full-Stack Web Developer in 12 Monaten. Von HTML/CSS bis zu modernen Frameworks wie React und Node.js. 100% praxisorientiert mit echten Projekten."
+        badge={{
+          icon: Award,
+          text: "Vollzeit • 12 Monate • IHK-Zertifikat"
+        }}
+        backgroundImage="/images/stock/colleagues-discussing-new-ideas-business-meeting.jpg"
+      />
 
       {/* Learning Path */}
       <section className="py-20">

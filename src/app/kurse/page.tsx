@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { ArrowRight, CheckCircle, Clock, Users, Award, Filter } from 'lucide-react';
 import Button from '../components/ui/Button';
+import PageHero from '../components/PageHero';
 
 export default function KompetenzkursePage() {
   const courses = [
@@ -181,36 +182,16 @@ export default function KompetenzkursePage() {
   const levels = ['Alle', 'Beginner', 'Intermediate', 'Advanced'];
 
   return (
-    <main className="min-h-screen pt-8">
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-syntax-primary-900 via-syntax-purple-900 to-syntax-primary-700 text-white py-20 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center bg-syntax-yellow-900 text-syntax-primary-900 px-4 py-2 rounded-full text-sm font-medium mb-8 hover:bg-syntax-yellow-800 transition-colors">
-            <Award className="w-4 h-4 mr-2" />
-            12 modulare IT-Kompetenzkurse
-          </div>
-                      <h1 className="text-4xl md:text-5xl font-bold mb-6 font-clash-display text-syntax-primary-900">
-              IT-Kompetenzkurse für deine Zukunft
-            </h1>
-            <p className="text-xl text-modern-gray-600 max-w-3xl mx-auto mb-8">
-            Modulare IT-Weiterbildung mit 12 einzeln buchbaren Kompetenzkursen. 100% gefördert durch den Bildungsgutschein 
-            und mit anerkanntem IHK-Zertifikat. Flexibel kombinierbar nach deinen Zielen.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/kontakt">
-              <Button variant="accent" size="xl">
-                Kostenlose Beratung buchen
-                <ArrowRight className="w-5 h-5 ml-2" />
-              </Button>
-            </Link>
-                          <Link href="/karrierepfade">
-                <Button variant="outline" size="xl">
-                  Empfohlene Karrierepfade ansehen
-                </Button>
-              </Link>
-          </div>
-        </div>
-      </section>
+    <main className="min-h-screen">
+      <PageHero
+        title="Kurse für deine Zukunft"
+        subtitle="Alle Kurse des Syntax Instituts. Kombiniere sie zu deinem individuellen Karrierepfad"
+        badge={{
+          icon: Award,
+          text: "12 modulare IT-Kompetenzkurse"
+        }}
+        backgroundImage="https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      />
 
       {/* Filter Section */}
       <section className="py-8 bg-gray-50">
