@@ -74,12 +74,16 @@ export default function AboutUsPage() {
   return (
     <main className="min-h-screen pt-8">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-syntax-primary-900 via-syntax-purple-900 to-syntax-primary-700 text-syntax-primary-900 py-20">
+      <section className="bg-gradient-to-br from-syntax-primary-900 via-syntax-purple-900 to-syntax-primary-700 text-white py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="inline-flex items-center bg-syntax-yellow-900 text-syntax-primary-900 px-4 py-2 rounded-full text-sm font-medium mb-8 hover:bg-syntax-yellow-800 transition-colors">
+            <Users className="w-4 h-4 mr-2" />
+            Über 1000 erfolgreiche Absolventen
+          </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 font-clash-display">
             Über Syntax Institut
           </h1>
-          <p className="text-xl text-syntax-purple-100 mb-8">
+          <p className="text-xl text-purple-100 mb-8">
             Pioniere in der IT-Weiterbildung mit über 1000 erfolgreichen Karrierewechslern
           </p>
         </div>

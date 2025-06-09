@@ -183,19 +183,19 @@ export default function KompetenzkursePage() {
   return (
     <main className="min-h-screen pt-8">
       {/* Hero Section */}
-      <section className="bg-white text-syntax-primary-900 py-20 overflow-hidden">
+      <section className="bg-gradient-to-br from-syntax-primary-900 via-syntax-purple-900 to-syntax-primary-700 text-white py-20 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                      <div className="inline-flex items-center bg-syntax-yellow-900 text-syntax-primary-900 px-4 py-2 rounded-full text-sm font-medium mb-8">
-              <Award className="w-4 h-4 mr-2" />
-              12 modulare IT-Kompetenzkurse
-            </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 font-clash-display">
-              IT-Kompetenzkurse für deine Zukunft
-            </h1>
-            <p className="text-xl text-purple-100 max-w-3xl mx-auto mb-8">
-              Modulare IT-Weiterbildung mit 12 einzeln buchbaren Kompetenzkursen. 100% gefördert durch den Bildungsgutschein 
-              und mit anerkanntem IHK-Zertifikat. Flexibel kombinierbar nach deinen Zielen.
-            </p>
+          <div className="inline-flex items-center bg-syntax-yellow-900 text-syntax-primary-900 px-4 py-2 rounded-full text-sm font-medium mb-8 hover:bg-syntax-yellow-800 transition-colors">
+            <Award className="w-4 h-4 mr-2" />
+            12 modulare IT-Kompetenzkurse
+          </div>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 font-clash-display">
+            IT-Kompetenzkurse für deine Zukunft
+          </h1>
+          <p className="text-xl text-purple-100 max-w-3xl mx-auto mb-8">
+            Modulare IT-Weiterbildung mit 12 einzeln buchbaren Kompetenzkursen. 100% gefördert durch den Bildungsgutschein 
+            und mit anerkanntem IHK-Zertifikat. Flexibel kombinierbar nach deinen Zielen.
+          </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/kontakt">
               <Button variant="accent" size="xl">

@@ -63,11 +63,11 @@ export default function WebDevelopmentPage() {
   return (
     <main className="min-h-screen pt-8">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-syntax-primary-900 via-syntax-purple-900 to-syntax-purple-700 text-syntax-primary-900 py-20">
+      <section className="bg-gradient-to-br from-syntax-primary-900 via-syntax-purple-900 to-syntax-purple-700 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
-              <div className="inline-flex items-center bg-syntax-yellow-900 text-syntax-primary-900 px-4 py-2 rounded-full text-sm font-medium">
+              <div className="inline-flex items-center bg-syntax-yellow-900 text-syntax-primary-900 px-4 py-2 rounded-full text-sm font-medium hover:bg-syntax-yellow-800 transition-colors">
                 <Award className="w-4 h-4 mr-2" />
                 Vollzeit • 12 Monate • IHK-Zertifikat
               </div>

@@ -147,19 +147,19 @@ export default function KarrierepfadePage() {
   return (
     <main className="min-h-screen pt-8">
       {/* Hero Section */}
-      <section className="bg-white text-syntax-primary-900 py-20 overflow-hidden">
+      <section className="bg-gradient-to-br from-syntax-primary-900 via-syntax-purple-900 to-syntax-primary-700 text-white py-20 overflow-hidden">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                      <div className="inline-flex items-center bg-white/70 backdrop-blur-sm border border-syntax-primary-100 text-syntax-primary-700 px-3 py-1.5 rounded-full text-xs font-medium mb-8 hover:bg-white/80 hover:border-syntax-primary-200 transition-all duration-300">
-              <Target className="w-3 h-3 mr-1.5 text-syntax-purple-600" />
-              Modulare IT-Weiterbildung
-            </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 font-clash-display">
-              IT-Karrierepfade
-            </h1>
-            <p className="text-xl text-purple-100 mb-8">
-              Empfohlene Kompetenzkurs-Sequenzen für deine IT-Karriere. Flexibel kombinierbar, 
-              einzeln buchbar und 100% gefördert.
-            </p>
+          <div className="inline-flex items-center bg-syntax-yellow-900 text-syntax-primary-900 px-4 py-2 rounded-full text-sm font-medium mb-8 hover:bg-syntax-yellow-800 transition-colors">
+            <Target className="w-4 h-4 mr-2" />
+            Modulare IT-Weiterbildung
+          </div>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 font-clash-display">
+            IT-Karrierepfade
+          </h1>
+          <p className="text-xl text-purple-100 mb-8">
+            Empfohlene Kompetenzkurs-Sequenzen für deine IT-Karriere. Flexibel kombinierbar, 
+            einzeln buchbar und 100% gefördert.
+          </p>
                       <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/kurse">
                 <Button variant="accent" size="xl">
