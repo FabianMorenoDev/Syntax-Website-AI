@@ -94,21 +94,21 @@ export default function iOSAppEntwicklungPage() {
   return (
     <main className="min-h-screen pt-8">
       {/* Hero Section */}
-      <section className="bg-white text-syntax-primary-900 py-20 overflow-hidden">
+      <section className="bg-white py-20 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
-              <div className="inline-flex items-center bg-pink-100 text-pink-700 px-4 py-2 rounded-full text-sm font-medium">
+              <div className="inline-flex items-center bg-syntax-yellow-900 text-syntax-primary-900 px-4 py-2 rounded-full text-sm font-medium hover:bg-syntax-yellow-800 transition-colors">
                 <Award className="w-4 h-4 mr-2" />
                 Vollzeit • 2,5 Monate • IHK-Zertifikat
               </div>
               
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight font-clash-display">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight font-clash-display text-syntax-primary-900">
                 iOS App-Entwicklung
-                <span className="block text-syntax-purple-900">mit SwiftUI</span>
+                <span className="block text-syntax-yellow-900">mit SwiftUI</span>
               </h1>
               
-              <p className="text-xl text-gray-600 leading-relaxed">
+              <p className="text-xl text-modern-gray-600 leading-relaxed">
                 Entwickle professionelle iOS Apps mit modernem SwiftUI. Von den Grundlagen bis zur 
                 App Store Veröffentlichung – in nur 2,5 Monaten.
               </p>

@@ -76,21 +76,21 @@ export default function ProduktdesignPage() {
   return (
     <main className="min-h-screen pt-8">
       {/* Hero Section */}
-      <section className="bg-white text-syntax-primary-900 py-20 overflow-hidden">
+      <section className="bg-white py-20 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
-              <div className="inline-flex items-center bg-syntax-yellow-900 text-syntax-primary-900 px-4 py-2 rounded-full text-sm font-medium">
+              <div className="inline-flex items-center bg-syntax-yellow-900 text-syntax-primary-900 px-4 py-2 rounded-full text-sm font-medium hover:bg-syntax-yellow-800 transition-colors">
                 <Award className="w-4 h-4 mr-2" />
                 Vollzeit • 4 Monate • IHK-Zertifikat
               </div>
               
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight font-clash-display">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight font-clash-display text-syntax-primary-900">
                 Produktdesign
                 <span className="block text-syntax-yellow-900">Weiterbildung</span>
               </h1>
               
-              <p className="text-xl text-syntax-purple-100 leading-relaxed">
+              <p className="text-xl text-modern-gray-600 leading-relaxed">
                 Werde Junior Product Designer in 4 Monaten. Von Design-Grundlagen über User Research 
                 bis hin zu professionellen Prototypen mit Figma und Framer.
               </p>
@@ -112,15 +112,15 @@ export default function ProduktdesignPage() {
               <div className="grid grid-cols-3 gap-6 text-center">
                 <div>
                   <div className="text-3xl font-bold text-syntax-yellow-900">16</div>
-                  <div className="text-sm text-syntax-purple-100">Wochen Intensiv</div>
+                  <div className="text-sm text-modern-gray-600">Wochen Intensiv</div>
                 </div>
                 <div>
                   <div className="text-3xl font-bold text-syntax-yellow-900">100%</div>
-                  <div className="text-sm text-syntax-purple-100">Förderung möglich</div>
+                  <div className="text-sm text-modern-gray-600">Förderung möglich</div>
                 </div>
                 <div>
                   <div className="text-3xl font-bold text-syntax-yellow-900">Portfolio</div>
-                  <div className="text-sm text-syntax-purple-100">3 Projekte</div>
+                  <div className="text-sm text-modern-gray-600">3 Projekte</div>
                 </div>
               </div>
             </div>

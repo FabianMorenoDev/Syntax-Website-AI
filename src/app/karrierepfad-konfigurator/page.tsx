@@ -201,16 +201,16 @@ export default function KarrierepfadKonfiguratorPage() {
   return (
     <main className="min-h-screen pt-8">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-syntax-primary-900 via-syntax-purple-900 to-syntax-primary-700 text-white py-20">
+      <section className="bg-white py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="inline-flex items-center bg-syntax-yellow-900 text-syntax-primary-900 px-4 py-2 rounded-full text-sm font-medium mb-8 hover:bg-syntax-yellow-800 transition-colors">
             <Puzzle className="w-4 h-4 mr-2" />
             Individueller Karrierepfad
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 font-clash-display">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 font-clash-display text-syntax-primary-900">
             Stelle deinen Karrierepfad zusammen
           </h1>
-          <p className="text-xl text-purple-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-modern-gray-600 mb-8 max-w-2xl mx-auto">
             Wähle aus 12+ Kompetenzkursen und erstelle deinen maßgeschneiderten IT-Karriereweg. 
             Jeder Kurs ist einzeln förderfähig mit dem Bildungsgutschein.
           </p>

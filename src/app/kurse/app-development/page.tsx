@@ -61,7 +61,7 @@ export default function AppDevelopmentPage() {
   return (
     <main className="min-h-screen pt-8">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-syntax-primary-900 via-syntax-pink-900 to-syntax-pink-700 text-white py-20">
+      <section className="bg-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
@@ -70,12 +70,12 @@ export default function AppDevelopmentPage() {
                 Vollzeit • 12 Monate • IHK-Zertifikat
               </div>
               
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight font-clash-display">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight font-clash-display text-syntax-primary-900">
                 App Development
                 <span className="block text-syntax-yellow-900">Weiterbildung</span>
               </h1>
               
-              <p className="text-xl text-purple-100 leading-relaxed">
+              <p className="text-xl text-modern-gray-600 leading-relaxed">
                 Entwickle professionelle Mobile Apps für iOS und Android. Von nativen Apps bis zu 
                 Cross-Platform Lösungen mit React Native und Flutter.
               </p>
@@ -93,15 +93,15 @@ export default function AppDevelopmentPage() {
               <div className="grid grid-cols-3 gap-6 text-center">
                 <div>
                   <div className="text-3xl font-bold text-syntax-yellow-900">48</div>
-                  <div className="text-sm text-syntax-pink-100">Wochen Intensiv</div>
+                  <div className="text-sm text-modern-gray-600">Wochen Intensiv</div>
                 </div>
                 <div>
                   <div className="text-3xl font-bold text-syntax-yellow-900">100%</div>
-                  <div className="text-sm text-syntax-pink-100">Förderung möglich</div>
+                  <div className="text-sm text-modern-gray-600">Förderung möglich</div>
                 </div>
                 <div>
                   <div className="text-3xl font-bold text-syntax-yellow-900">5+</div>
-                  <div className="text-sm text-syntax-pink-100">Portfolio Apps</div>
+                  <div className="text-sm text-modern-gray-600">Portfolio Apps</div>
                 </div>
               </div>
             </div>

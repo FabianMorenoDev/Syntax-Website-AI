@@ -189,10 +189,10 @@ export default function KompetenzkursePage() {
             <Award className="w-4 h-4 mr-2" />
             12 modulare IT-Kompetenzkurse
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 font-clash-display">
-            IT-Kompetenzkurse für deine Zukunft
-          </h1>
-          <p className="text-xl text-purple-100 max-w-3xl mx-auto mb-8">
+                      <h1 className="text-4xl md:text-5xl font-bold mb-6 font-clash-display text-syntax-primary-900">
+              IT-Kompetenzkurse für deine Zukunft
+            </h1>
+            <p className="text-xl text-modern-gray-600 max-w-3xl mx-auto mb-8">
             Modulare IT-Weiterbildung mit 12 einzeln buchbaren Kompetenzkursen. 100% gefördert durch den Bildungsgutschein 
             und mit anerkanntem IHK-Zertifikat. Flexibel kombinierbar nach deinen Zielen.
           </p>
