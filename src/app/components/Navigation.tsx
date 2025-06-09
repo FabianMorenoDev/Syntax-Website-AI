@@ -52,15 +52,16 @@ export default function Navigation() {
   const mainNavItems = [
     { href: '/', label: 'Home', hasDropdown: false },
     { href: '/kurse', label: 'Kurse', hasDropdown: true },
+    { href: '/karrierepfade', label: 'Karrierepfade', hasDropdown: true },
     { href: '/bildungsgutschein', label: 'Bildungsgutschein', hasDropdown: false },
     { href: '/erfolgsgeschichten', label: 'Erfolgsgeschichten', hasDropdown: false },
     { href: '/ueber-uns', label: 'Über uns', hasDropdown: false },
   ];
 
   const careerPaths = [
-    { href: '/karrierepfade', icon: '🤖', title: 'KI orientierte Web-Entwicklung', subtitle: 'Produktdesign → Web Grundlagen → Frontend → Backend', emoji: '🤖' },
-    { href: '/karrierepfade', icon: '📱', title: 'Mobile-App Entwicklung', subtitle: 'UX/UI → Programmierung → iOS → Android', emoji: '📱' },
-    { href: '/karrierepfade', icon: '☁️', title: 'Linux, Cloud & Web', subtitle: 'IT Grundlagen → Development → Linux → Cloud', emoji: '☁️' },
+    { href: '/karrierepfade/web-development', icon: '🤖', title: 'Web Development', subtitle: 'Produktdesign → Web Grundlagen → Frontend → Backend', emoji: '🤖' },
+    { href: '/karrierepfade/app-development', icon: '📱', title: 'App Development', subtitle: 'UX/UI → Programmierung → iOS → Android', emoji: '📱' },
+    { href: '/karrierepfade/linux-cloud', icon: '☁️', title: 'Linux & Cloud Engineering', subtitle: 'IT Grundlagen → Development → Linux → Cloud', emoji: '☁️' },
     { href: '/karrierepfad-konfigurator', icon: '🧩', title: 'Eigenen Karrierepfad zusammenstellen', subtitle: 'Deine individuelle Kombination', emoji: '🧩', isCustom: true },
   ];
 
@@ -144,11 +145,13 @@ export default function Navigation() {
                       className="grid grid-cols-2 min-h-[320px] max-w-7xl mx-auto"
                       onMouseLeave={() => setSelectedCareerPath(-1)}
                     >
-                                            {/* Left Column - Career Paths */}
-                      <div className="bg-white px-4 py-3">
-                        <div className="mb-3">
-                          <h3 className="text-base font-bold text-syntax-primary-900 mb-1">Wähle deinen Karrierepfad</h3>
-                        </div>
+                      {item.href === '/kurse' ? (
+                        <>
+                          {/* Left Column - Career Paths */}
+                          <div className="bg-white px-4 py-3">
+                            <div className="mb-3">
+                              <h3 className="text-base font-bold text-syntax-primary-900 mb-1">Wähle deinen Karrierepfad</h3>
+                            </div>
                         
                         <div className="space-y-1.5">
                           {careerPaths.map((path, index) => (
