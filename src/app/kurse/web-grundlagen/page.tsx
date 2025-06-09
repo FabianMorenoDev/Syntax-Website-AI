@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { ArrowRight, CheckCircle, Clock, Users, Award, Star, Code, Globe, Terminal, Database, BookOpen, Briefcase, Target } from 'lucide-react';
 import Button from '../../components/ui/Button';
-import PageHero from '../../components/PageHero';
+import CourseHero from '../../components/CourseHero';
 
 export const metadata = {
   title: 'Web-Grundlagen Kurs - Syntax Institut | HTML CSS JavaScript Weiterbildung mit Bildungsgutschein',
@@ -100,14 +100,18 @@ export default function WebGrundlagenPage() {
 
   return (
     <main className="min-h-screen">
-      <PageHero
+      <CourseHero
         title="Web-Grundlagen"
-        subtitle="HTML, CSS, JavaScript & TypeScript – die technische Basis für alle Web-Projekte"
-        badge={{
-          icon: Award,
-          text: "Vollzeit • 3 Monate • Praxisprojekte"
-        }}
-        backgroundImage="/images/stock/co-working-people-working-together.jpg"
+        subtitle="HTML, CSS, JavaScript & TypeScript"
+        duration="3 Monate"
+        description="Von den ersten HTML-Tags bis zur vollständigen responsive Website. Du lernst alle technischen Grundlagen für moderne Webentwicklung."
+        careerPathTitle="Web Development Karrierepfads"
+        careerPathPosition="Kurs 2 von 4"
+        certificate="Interaktive Website"
+        technologies={['HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'Bootstrap', 'Git']}
+        salaryRange="35.000 - 55.000€"
+        courseSlug="web-grundlagen"
+        careerPathSlug="web-development"
       />
 
       {/* Career Path Integration */}

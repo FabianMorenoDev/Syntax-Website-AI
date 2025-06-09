@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { ArrowRight, CheckCircle, Clock, Users, Award, Target, BookOpen, Briefcase, TrendingUp, MapPin, Globe, Code, Database, Brain } from 'lucide-react';
 import Button from '../../components/ui/Button';
-import PageHero from '../../components/PageHero';
+import CareerPathHero from '../../components/CareerPathHero';
 
 export default function WebDevelopmentCareerPath() {
   const careerPath = {
@@ -102,14 +102,16 @@ export default function WebDevelopmentCareerPath() {
 
   return (
     <main className="min-h-screen">
-      <PageHero
-        title="Web Development Karrierepfad"
-        subtitle="Vom Design zur vollständigen Web-Anwendung – 4 Kurse, 12 Monate, IHK-Zertifikate"
-        badge={{
-          icon: Target,
-          text: "Kompletter Karrierepfad"
-        }}
-        backgroundImage="/images/stock/colleagues-discussing-new-ideas-business-meeting.jpg"
+      <CareerPathHero
+        title="Web Development"
+        subtitle="Vom Design zur vollständigen Web-Anwendung"
+        duration="12 Monate"
+        modules={4}
+        targetJobs={careerPath.targetJobs}
+        description={careerPath.description}
+        courseCount={4}
+        certificates={['Product Designer (IHK)', 'Web Developer (IHK)', 'Junior Web Developer (IHK)', 'Web Development Specialist (IHK)']}
+        backgroundImage="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80"
       />
 
       {/* Karrierepfad Übersicht */}

@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { ArrowRight, CheckCircle, Clock, Users, Award, Target, BookOpen, Briefcase, TrendingUp, MapPin, Smartphone, Palette, Code, Apple } from 'lucide-react';
 import Button from '../../components/ui/Button';
-import PageHero from '../../components/PageHero';
+import CareerPathHero from '../../components/CareerPathHero';
 
 export default function AppDevelopmentCareerPath() {
   const careerPath = {
@@ -109,14 +109,16 @@ export default function AppDevelopmentCareerPath() {
 
   return (
     <main className="min-h-screen">
-      <PageHero
-        title="App Development Karrierepfad"
-        subtitle="Von der App-Idee zum App Store – 4 Kurse, iOS & Android, IHK-Zertifikate"
-        badge={{
-          icon: Target,
-          text: "Mobile-First Karriere"
-        }}
-        backgroundImage="/images/stock/colleagues-discussing-new-ideas-business-meeting.jpg"
+      <CareerPathHero
+        title="App Development"
+        subtitle="Von der App-Idee zum App Store"
+        duration="12 Monate"
+        modules={4}
+        targetJobs={careerPath.targetJobs}
+        description={careerPath.description}
+        courseCount={4}
+        certificates={['UX/UI Design Portfolio', 'iOS Playground App', 'App Developer iOS (IHK)', 'App Developer Android (IHK)']}
+        backgroundImage="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
       />
 
       {/* Mobile Market Stats */}

@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { ArrowRight, CheckCircle, Clock, Users, Award, Star, Code, Terminal, Cpu, Smartphone, BookOpen, Briefcase, Target } from 'lucide-react';
 import Button from '../../components/ui/Button';
-import PageHero from '../../components/PageHero';
+import CourseHero from '../../components/CourseHero';
 
 export const metadata = {
   title: 'Programmiergrundlagen Kurs - Syntax Institut | Swift Xcode Weiterbildung mit Bildungsgutschein',
@@ -123,14 +123,18 @@ export default function ProgrammiergrundlagenPage() {
 
   return (
     <main className="min-h-screen">
-      <PageHero
+      <CourseHero
         title="Programmiergrundlagen"
-        subtitle="Swift & Xcode Basics – der technische Einstieg in die iOS App-Entwicklung"
-        badge={{
-          icon: Award,
-          text: "Vollzeit • 3 Monate • iOS-Playground-App"
-        }}
-        backgroundImage="/images/stock/co-working-people-working-together.jpg"
+        subtitle="Swift & Xcode Basics"
+        duration="3 Monate"
+        description="Von der ersten Zeile Code bis zur funktionsfähigen iOS App. Du lernst Swift und die Grundlagen der iOS-Entwicklung ohne Vorkenntnisse."
+        careerPathTitle="App Development Karrierepfads"
+        careerPathPosition="Kurs 2 von 4"
+        certificate="iOS Playground App"
+        technologies={['Swift', 'Xcode', 'iOS SDK', 'Playgrounds', 'Interface Builder', 'Simulator']}
+        salaryRange="35.000 - 58.000€"
+        courseSlug="programmiergrundlagen"
+        careerPathSlug="app-development"
       />
 
       {/* Career Path Integration */}

@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { ArrowRight, CheckCircle, Clock, Users, Award, Star, Palette, Smartphone, Layers, Eye, BookOpen, Briefcase, Target } from 'lucide-react';
 import Button from '../../components/ui/Button';
-import PageHero from '../../components/PageHero';
+import CourseHero from '../../components/CourseHero';
 
 export const metadata = {
   title: 'UX/UI Design Kurs - Syntax Institut | App Design Weiterbildung mit Bildungsgutschein',
@@ -103,14 +103,18 @@ export default function UXUIDesignPage() {
 
   return (
     <main className="min-h-screen">
-      <PageHero
+      <CourseHero
         title="UX/UI Design"
-        subtitle="App-Design & Mobile User Experience – der kreative Einstieg in die App-Entwicklung"
-        badge={{
-          icon: Award,
-          text: "Vollzeit • 4 Monate • Design-Prototyp"
-        }}
-        backgroundImage="/images/stock/co-working-people-working-together.jpg"
+        subtitle="App-Design & Mobile User Experience"
+        duration="4 Monate"
+        description="Von den ersten Skizzen bis zum finalen interaktiven Prototyp. Du lernst alle Aspekte des modernen App-Designs und UX-Prozesses."
+        careerPathTitle="App Development Karrierepfads"
+        careerPathPosition="Kurs 1 von 4"
+        certificate="UX/UI Design Portfolio"
+        technologies={['Figma', 'Sketch', 'Adobe XD', 'Principle', 'Zeplin', 'InVision']}
+        salaryRange="35.000 - 55.000€"
+        courseSlug="ux-ui-design"
+        careerPathSlug="app-development"
       />
 
       {/* Career Path Integration */}

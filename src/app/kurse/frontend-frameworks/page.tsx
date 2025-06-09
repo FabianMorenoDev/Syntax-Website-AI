@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { ArrowRight, CheckCircle, Clock, Users, Award, Star, Code, Zap, Layers, Database, BookOpen, Briefcase, Target } from 'lucide-react';
 import Button from '../../components/ui/Button';
-import PageHero from '../../components/PageHero';
+import CourseHero from '../../components/CourseHero';
 
 export const metadata = {
   title: 'Frontend-Frameworks Kurs - Syntax Institut | React Next.js Angular Weiterbildung mit Bildungsgutschein',
@@ -121,14 +121,18 @@ export default function FrontendFrameworksPage() {
 
   return (
     <main className="min-h-screen">
-      <PageHero
+      <CourseHero
         title="Frontend-Frameworks"
-        subtitle="React, Next.js & moderne Frontend-Entwicklung – von einfachen Komponenten zu komplexen Anwendungen"
-        badge={{
-          icon: Award,
-          text: "Vollzeit • 2,5 Monate • IHK-Zertifikat"
-        }}
-        backgroundImage="/images/stock/co-working-people-working-together.jpg"
+        subtitle="React, Next.js & moderne Frontend-Entwicklung"
+        duration="2,5 Monate"
+        description="Von React-Grundlagen zu komplexen Next.js Anwendungen. Du lernst die gefragtesten Frontend-Frameworks und baust echte Web-Anwendungen."
+        careerPathTitle="Web Development Karrierepfads"
+        careerPathPosition="Kurs 3 von 4"
+        certificate="Junior Web Developer (IHK)"
+        technologies={['React.js', 'Next.js', 'Angular', 'Vue.js', 'Tailwind CSS', 'Strapi']}
+        salaryRange="42.000 - 65.000€"
+        courseSlug="frontend-frameworks"
+        careerPathSlug="web-development"
       />
 
       {/* Career Path Integration */}

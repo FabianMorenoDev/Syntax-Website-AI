@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { ArrowRight, CheckCircle, Clock, Users, Award, Target, BookOpen, Briefcase, TrendingUp, MapPin, Server, Cloud, Settings, Zap } from 'lucide-react';
 import Button from '../../components/ui/Button';
-import PageHero from '../../components/PageHero';
+import CareerPathHero from '../../components/CareerPathHero';
 
 export default function LinuxCloudCareerPath() {
   const careerPath = {
@@ -109,14 +109,16 @@ export default function LinuxCloudCareerPath() {
 
   return (
     <main className="min-h-screen">
-      <PageHero
-        title="Linux & Cloud Engineering Karrierepfad"
-        subtitle="Von IT-Grundlagen zur Cloud-Infrastruktur – 4 Kurse, DevOps-fokussiert, IHK-Zertifikat"
-        badge={{
-          icon: Target,
-          text: "Infrastructure & DevOps"
-        }}
-        backgroundImage="/images/stock/colleagues-discussing-new-ideas-business-meeting.jpg"
+      <CareerPathHero
+        title="Linux & Cloud Engineering"
+        subtitle="Von IT-Grundlagen zur Cloud-Infrastruktur"
+        duration="12 Monate"
+        modules={4}
+        targetJobs={careerPath.targetJobs}
+        description={careerPath.description}
+        courseCount={4}
+        certificates={['IT-Basiskompetenz', 'Linux Essentials Vorbereitung', 'Technische Umsetzungskompetenz', 'Cloud IT Administrator (IHK)']}
+        backgroundImage="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2134&q=80"
       />
 
       {/* Industry Stats */}

@@ -10,41 +10,41 @@ export default function Navigation() {
 
   // Mapping der Kurse zu Karrierepfaden
   const careerPathCourses = [
-    { // KI orientierte Web-Entwicklung
-      title: "KI orientierte Web-Entwicklung",
+    {
+      title: 'Web Development',
       courses: [
-        { name: "Produktdesign", icon: "🎨", duration: "4 Mon.", description: "User Experience, Interface Design, Figma", href: "/kurse/produktdesign" },
-        { name: "Web-Grundlagen", icon: "🌐", duration: "3 Mon.", description: "HTML, CSS, JavaScript Basics", href: "/kurse/web-grundlagen" },
-        { name: "Frontend-Frameworks", icon: "⚡", duration: "2.5 Mon.", description: "React, Vue.js, TypeScript", href: "/kurse/frontend-frameworks" },
-        { name: "Web-Spezialisierung", icon: "🔍", duration: "2.5 Mon.", description: "Backend, APIs, Datenbanken", href: "/kurse/web-spezialisierung" }
+        { icon: '💼', name: 'Produktdesign', href: '/kurse/produktdesign', duration: '4 Mon.', description: 'UI/UX Design, Figma & Projektmanagement' },
+        { icon: '🌐', name: 'Web-Grundlagen', href: '/kurse/web-grundlagen', duration: '3 Mon.', description: 'HTML, CSS, JavaScript & TypeScript' },
+        { icon: '💻', name: 'Frontend-Frameworks', href: '/kurse/frontend-frameworks', duration: '2.5 Mon.', description: 'React, Next.js & moderne Frontend-Entwicklung' },
+        { icon: '🧠', name: 'Web-Spezialisierung', href: '/kurse/web-spezialisierung', duration: '2.5 Mon.', description: 'Backend, APIs & Full-Stack Development' }
       ]
     },
-    { // Mobile-App Entwicklung
-      title: "Mobile-App Entwicklung",
+    {
+      title: 'App Development',
       courses: [
-        { name: "UX/UI Design", icon: "🎨", duration: "4 Mon.", description: "Mobile Design, Prototyping, Usability", href: "/kurse/produktdesign" },
-        { name: "Programmiergrundlagen", icon: "💻", duration: "3 Mon.", description: "Swift, Kotlin, JavaScript", href: "/kurse/programmiergrundlagen" },
-        { name: "iOS App-Entwicklung", icon: "📱", duration: "2.5 Mon.", description: "Swift, Xcode, App Store", href: "/kurse/ios-app-entwicklung" },
-        { name: "Android App-Entwicklung", icon: "🤖", duration: "2.5 Mon.", description: "Kotlin, Android Studio, Play Store", href: "/kurse/android-app-entwicklung" }
+        { icon: '🎨', name: 'UX/UI Design', href: '/kurse/ux-ui-design', duration: '4 Mon.', description: 'Mobile App Design & User Experience' },
+        { icon: '👨‍💻', name: 'Programmiergrundlagen', href: '/kurse/programmiergrundlagen', duration: '3 Mon.', description: 'Swift & iOS Development Basics' },
+        { icon: '🍏', name: 'iOS App-Entwicklung', href: '/kurse/ios-app-entwicklung', duration: '2.5 Mon.', description: 'Native iOS Apps mit SwiftUI' },
+        { icon: '🤖', name: 'Android App-Entwicklung', href: '/kurse/android-app-entwicklung', duration: '2.5 Mon.', description: 'Native Android Apps mit Kotlin' }
       ]
     },
-    { // Linux, Cloud & Web
-      title: "Linux, Cloud & Web",
+    {
+      title: 'Linux & Cloud Engineering',
       courses: [
-        { name: "IT-Grundlagen", icon: "💾", duration: "3 Mon.", description: "Netzwerke, Server, Sicherheit", href: "/kurse/it-grundlagen" },
-        { name: "Linux, Python & Cloud", icon: "🐧", duration: "3 Mon.", description: "Linux Administration, Python, AWS", href: "/kurse/linux-cloud" },
-        { name: "Webtechnologien & Admin", icon: "🌐", duration: "3 Mon.", description: "Docker, Kubernetes, DevOps", href: "/kurse/webtechnologien-admin" },
-        { name: "DevOps & Cloud", icon: "☁️", duration: "3 Mon.", description: "CI/CD, Monitoring, Automation", href: "/kurse/devops-cloud" }
+        { icon: '💡', name: 'IT-Grundlagen', href: '/kurse/it-grundlagen', duration: '3 Mon.', description: 'Netzwerke, Linux & IT-Sicherheit' },
+        { icon: '🐧', name: 'Linux, Python & Cloud', href: '/kurse/linux-python-cloud', duration: '3 Mon.', description: 'Shell, Python & Cloud Basics' },
+        { icon: '🌐', name: 'Webtechnologien & Admin', href: '/kurse/webtechnologien-admin', duration: '3 Mon.', description: 'Webserver, Deployment & Monitoring' },
+        { icon: '☁️', name: 'DevOps & Cloud', href: '/kurse/devops-cloud', duration: '3 Mon.', description: 'CI/CD, Automatisierung & Cloud Deployment' }
       ]
     },
-    { // Eigenen Karrierepfad zusammenstellen
-      title: "Eigenen Karrierepfad zusammenstellen",
+    {
+      title: 'Eigenen Karrierepfad zusammenstellen',
       isCustom: true,
       bulletPoints: [
-        "Wähle aus allen 12 verfügbaren Kursen die für dich passenden aus",
-        "Bestimme deine optimale Lernreihenfolge je nach Vorkenntnissen",
-        "Passe den Zeitplan an: Vollzeit, Teilzeit oder berufsbegleitend",
-        "Starte direkt mit deinem individuell zusammengestellten Pfad"
+        'Wähle aus allen verfügbaren Kursen',
+        'Plane deine individuelle Laufbahn',
+        'Flexible Zeitplanung möglich',
+        'Persönliche Beratung inklusive'
       ]
     }
   ];
@@ -52,7 +52,6 @@ export default function Navigation() {
   const mainNavItems = [
     { href: '/', label: 'Home', hasDropdown: false },
     { href: '/kurse', label: 'Kurse', hasDropdown: true },
-    { href: '/karrierepfade', label: 'Karrierepfade', hasDropdown: true },
     { href: '/bildungsgutschein', label: 'Bildungsgutschein', hasDropdown: false },
     { href: '/erfolgsgeschichten', label: 'Erfolgsgeschichten', hasDropdown: false },
     { href: '/ueber-uns', label: 'Über uns', hasDropdown: false },
@@ -139,40 +138,30 @@ export default function Navigation() {
                   {item.label}
                 </Link>
                 {item.hasDropdown && (
-                  <div className="fixed left-0 right-0 top-[96px] w-full bg-white shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 border-t border-modern-gray-200 z-50">
+                  <div 
+                    className="fixed left-0 right-0 top-[96px] w-full bg-white shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 border-t border-modern-gray-200 z-50"
+                    onMouseLeave={() => setSelectedCareerPath(-1)}
+                  >
                     {/* Content Section */}
-                    <div 
-                      className="grid grid-cols-2 min-h-[320px] max-w-7xl mx-auto"
-                      onMouseLeave={() => setSelectedCareerPath(-1)}
-                    >
-                      {item.href === '/kurse' ? (
-                        <>
-                          {/* Left Column - Career Paths */}
-                          <div className="bg-white px-4 py-3">
-                            <div className="mb-3">
-                              <h3 className="text-base font-bold text-syntax-primary-900 mb-1">Wähle deinen Karrierepfad</h3>
-                            </div>
+                    <div className="grid grid-cols-2 min-h-[320px] max-w-7xl mx-auto">
+                                              {/* Left Column - Career Paths */}
+                        <div className="bg-white px-4 py-3">
+                        <div className="mb-3">
+                          <h3 className="text-base font-bold text-syntax-primary-900 mb-1">Wähle deinen Karrierepfad</h3>
+                        </div>
                         
                         <div className="space-y-1.5">
                           {careerPaths.map((path, index) => (
-                            <div
+                            <Link
                               key={path.title}
-                              className={`group/path cursor-pointer p-3 rounded-lg transition-all duration-200 border ${
-                                index === selectedCareerPath 
-                                  ? 'bg-syntax-purple-50 border-syntax-purple-200 shadow-sm' 
-                                  : 'border-transparent hover:bg-syntax-purple-50 hover:border-syntax-purple-100 hover:shadow-sm'
-                              }`}
-                              onClick={() => setSelectedCareerPath(index)}
+                              href={path.href}
+                              className="block p-3 rounded-lg transition-all duration-200 border border-transparent hover:bg-syntax-purple-50 hover:border-syntax-purple-100 hover:shadow-sm"
                               onMouseEnter={() => setSelectedCareerPath(index)}
                             >
                               <div className="flex items-start space-x-2.5">
                                 <div className="text-xl">{path.emoji}</div>
                                 <div className="flex-1">
-                                  <h4 className={`font-semibold text-sm transition-colors ${
-                                    index === selectedCareerPath 
-                                      ? 'text-syntax-purple-900' 
-                                      : 'text-syntax-primary-900 group-hover/path:text-syntax-purple-900'
-                                  }`}>
+                                  <h4 className="font-semibold text-sm text-syntax-primary-900 hover:text-syntax-purple-900 transition-colors">
                                     {path.title}
                                   </h4>
                                   <div className="flex items-center mt-1.5 text-xs">
@@ -191,7 +180,7 @@ export default function Navigation() {
                                   </div>
                                 </div>
                               </div>
-                            </div>
+                            </Link>
                           ))}
                         </div>
 
@@ -209,7 +198,7 @@ export default function Navigation() {
                         </div>
                       </div>
 
-                                            {/* Right Column - Course Details */}
+                      {/* Right Column - Course Details */}
                       <div className="bg-white px-4 py-3 border-l border-modern-gray-200">
                         {selectedCareerPath >= 0 ? (
                           <>

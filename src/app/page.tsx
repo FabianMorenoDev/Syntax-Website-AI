@@ -144,7 +144,7 @@ export default function Home() {
                   <div className="text-sm text-modern-gray-500">
                     <Clock className="w-4 h-4 inline mr-1" />12 Monate
                   </div>
-                  <Link href="/karrierepfade">
+                  <Link href="/karrierepfade/web-development">
                     <Button variant="primary">Karrierepfad ansehen</Button>
                   </Link>
                 </div>
@@ -175,7 +175,7 @@ export default function Home() {
                   <div className="text-sm text-modern-gray-500">
                     <Clock className="w-4 h-4 inline mr-1" />12 Monate
                   </div>
-                  <Link href="/karrierepfade">
+                  <Link href="/karrierepfade/app-development">
                     <Button variant="primary">Karrierepfad ansehen</Button>
                   </Link>
                 </div>
@@ -206,7 +206,7 @@ export default function Home() {
                   <div className="text-sm text-modern-gray-500">
                     <Clock className="w-4 h-4 inline mr-1" />12 Monate
                   </div>
-                  <Link href="/karrierepfade">
+                  <Link href="/karrierepfade/linux-cloud">
                     <Button variant="primary">Karrierepfad ansehen</Button>
                   </Link>
                 </div>

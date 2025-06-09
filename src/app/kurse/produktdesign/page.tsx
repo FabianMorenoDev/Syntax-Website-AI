@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { ArrowRight, CheckCircle, Clock, Users, Award, Star, Palette, Users2, Target, Lightbulb, BookOpen, Briefcase, MapPin } from 'lucide-react';
 import Button from '../../components/ui/Button';
-import PageHero from '../../components/PageHero';
+import CourseHero from '../../components/CourseHero';
 
 export const metadata = {
   title: 'Produktdesign Kurs - Syntax Institut | UI/UX Design Weiterbildung mit Bildungsgutschein',
@@ -77,14 +77,18 @@ export default function ProduktdesignPage() {
 
   return (
     <main className="min-h-screen">
-      <PageHero
+      <CourseHero
         title="Produktdesign"
-        subtitle="Der perfekte Einstieg in die Web Development – UI/UX Design, Figma & Framer"
-        badge={{
-          icon: Award,
-          text: "Vollzeit • 4 Monate • IHK-Zertifikat"
-        }}
-        backgroundImage="/images/stock/co-working-people-working-together.jpg"
+        subtitle="Der perfekte Einstieg in die Web Development"
+        duration="4 Monate"
+        description="Werde Junior Product Designer in 4 Monaten. Von Design-Grundlagen über User Research bis hin zu professionellen Prototypen mit Figma und Framer."
+        careerPathTitle="Web Development Karrierepfads"
+        careerPathPosition="Kurs 1 von 4"
+        certificate="Junior Product Designer (IHK)"
+        technologies={['Figma', 'Framer', 'Adobe Creative Suite', 'Miro', 'Notion', 'Principle']}
+        salaryRange="35.000 - 50.000€"
+        courseSlug="produktdesign"
+        careerPathSlug="web-development"
       />
 
       {/* Career Path Integration */}
