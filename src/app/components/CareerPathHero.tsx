@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { ArrowRight, Award, Clock, Users, Target, CheckCircle } from 'lucide-react';
+import { ArrowRight, Award, Clock, Users, Target } from 'lucide-react';
 import Button from './ui/Button';
 
 interface CareerPathHeroProps {
@@ -19,10 +19,8 @@ export default function CareerPathHero({
   subtitle,
   duration,
   modules,
-  targetJobs,
   description,
   courseCount,
-  certificates,
   backgroundImage
 }: CareerPathHeroProps) {
   return (
@@ -115,52 +113,6 @@ export default function CareerPathHero({
                 />
               </div>
             )}
-            
-            {/* Target Jobs */}
-            <div className="bg-syntax-primary-50 p-6 rounded-2xl">
-              <h3 className="text-lg font-bold text-syntax-primary-900 mb-4">
-                Deine Berufsperspektiven
-              </h3>
-              <div className="space-y-3">
-                {targetJobs.slice(0, 4).map((job, index) => (
-                  <div key={index} className="flex items-center space-x-3">
-                    <CheckCircle className="w-5 h-5 text-syntax-green-900" />
-                    <span className="text-syntax-primary-900 font-medium">{job}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Certificates */}
-            <div className="bg-white border border-modern-gray-200 p-6 rounded-2xl shadow-sm">
-              <h3 className="text-lg font-bold text-syntax-primary-900 mb-4">
-                Deine Zertifikate
-              </h3>
-              <div className="space-y-3">
-                {certificates.map((cert, index) => (
-                  <div key={index} className="flex items-center space-x-3">
-                    <Award className="w-5 h-5 text-syntax-yellow-900" />
-                    <span className="text-syntax-primary-900">{cert}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Stats */}
-            <div className="grid grid-cols-3 gap-4 text-center">
-              <div className="bg-white border border-modern-gray-200 p-4 rounded-xl">
-                <div className="text-2xl font-bold text-syntax-primary-900">{courseCount}</div>
-                <div className="text-sm text-modern-gray-600">Kurse</div>
-              </div>
-              <div className="bg-white border border-modern-gray-200 p-4 rounded-xl">
-                <div className="text-2xl font-bold text-syntax-primary-900">100%</div>
-                <div className="text-sm text-modern-gray-600">Förderung</div>
-              </div>
-              <div className="bg-white border border-modern-gray-200 p-4 rounded-xl">
-                <div className="text-2xl font-bold text-syntax-primary-900">800+</div>
-                <div className="text-sm text-modern-gray-600">Absolventen</div>
-              </div>
-            </div>
           </div>
         </div>
       </div>

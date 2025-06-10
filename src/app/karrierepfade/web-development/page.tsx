@@ -26,7 +26,7 @@ export default function WebDevelopmentCareerPath() {
         description: 'UI/UX Design, Designprinzipien, Figma & Framer, Projektmanagement, Produktstrategie',
         skills: ['UI/UX Design', 'Designprinzipien', 'Figma & Framer', 'Projektmanagement', 'Produktstrategie', 'User Research'],
         certificate: 'Junior Product Designer (IHK)',
-        icon: Globe,
+        image: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80',
         color: 'purple',
         goal: 'Grundlagen des modernen Webdesigns und Nutzererfahrung'
       },
@@ -38,7 +38,7 @@ export default function WebDevelopmentCareerPath() {
         description: 'HTML & CSS, Bootstrap, JavaScript & TypeScript, Publishing',
         skills: ['HTML5 & CSS3', 'Bootstrap Framework', 'JavaScript ES6+', 'TypeScript', 'Responsive Design', 'Git & Publishing'],
         certificate: 'Interaktive Website',
-        icon: Code,
+        image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80',
         color: 'blue',
         goal: 'Technische Umsetzung deiner Designs in funktionsfähige Websites'
       },
@@ -50,7 +50,7 @@ export default function WebDevelopmentCareerPath() {
         description: 'React, Next.js, Angular/Vue (Einblick), Tailwind CSS, Strapi, Deployment',
         skills: ['React.js', 'Next.js', 'Angular/Vue Einblick', 'Tailwind CSS', 'Strapi CMS', 'Deployment Strategien'],
         certificate: 'Junior Web Developer (IHK)',
-        icon: Database,
+        image: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80',
         color: 'green',
         goal: 'Moderne Frontend-Entwicklung mit professionellen Frameworks'
       },
@@ -62,7 +62,7 @@ export default function WebDevelopmentCareerPath() {
         description: 'Node.js, Express.js, Authentifizierung, Datenbanken, Performance & Automation',
         skills: ['Node.js & Express.js', 'Authentifizierung', 'Datenbank Design', 'Performance Optimization', 'Automation', 'Testing'],
         certificate: 'Web Development Specialist (IHK)',
-        icon: Brain,
+        image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80',
         color: 'purple',
         goal: 'Backend-Entwicklung und vollständige Web-Anwendungen'
       }
@@ -114,152 +114,92 @@ export default function WebDevelopmentCareerPath() {
         backgroundImage="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80"
       />
 
-      {/* Karrierepfad Übersicht */}
-      <section className="py-20">
+      {/* Kurse Übersicht */}
+      <section className="py-16 lg:py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-            <div className="lg:col-span-2">
-              <h2 className="text-3xl md:text-4xl font-bold text-syntax-primary-900 mb-6 font-clash-display">
-                Dein Weg zum Web Developer
-              </h2>
-              <p className="text-xl text-modern-gray-600 leading-relaxed mb-8">
-                {careerPath.description} In 4 aufeinander aufbauenden Kursen entwickelst du alle Fähigkeiten, 
-                die moderne Unternehmen von Web Developern erwarten.
-              </p>
-
-              <div className="grid grid-cols-2 gap-6 mb-8">
-                <div className="bg-white p-6 rounded-xl shadow-lg border border-modern-gray-200">
-                  <Clock className="w-8 h-8 text-syntax-purple-900 mb-3" />
-                  <h3 className="font-bold text-syntax-primary-900 mb-2">Gesamtdauer</h3>
-                  <p className="text-modern-gray-600">{careerPath.duration}</p>
-                </div>
-                <div className="bg-white p-6 rounded-xl shadow-lg border border-modern-gray-200">
-                  <Award className="w-8 h-8 text-syntax-purple-900 mb-3" />
-                  <h3 className="font-bold text-syntax-primary-900 mb-2">Zertifikate</h3>
-                  <p className="text-modern-gray-600">4 IHK-Zertifikate</p>
-                </div>
-                <div className="bg-white p-6 rounded-xl shadow-lg border border-modern-gray-200">
-                  <TrendingUp className="w-8 h-8 text-syntax-purple-900 mb-3" />
-                  <h3 className="font-bold text-syntax-primary-900 mb-2">Gehaltsspanne</h3>
-                  <p className="text-modern-gray-600">{careerPath.salaryRange}</p>
-                </div>
-                <div className="bg-white p-6 rounded-xl shadow-lg border border-modern-gray-200">
-                  <Briefcase className="w-8 h-8 text-syntax-purple-900 mb-3" />
-                  <h3 className="font-bold text-syntax-primary-900 mb-2">Jobaussichten</h3>
-                  <p className="text-modern-gray-600">Sehr hoch</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-gradient-to-br from-syntax-purple-50 to-syntax-purple-100 p-8 rounded-2xl">
-              <h3 className="text-xl font-bold text-syntax-primary-900 mb-6 font-clash-display">
-                Ziel-Berufsfelder
-              </h3>
-              <div className="space-y-3">
-                {careerPath.targetJobs.map((job, index) => (
-                  <div key={index} className="flex items-center">
-                    <CheckCircle className="w-5 h-5 text-syntax-green-900 mr-3" />
-                    <span className="text-syntax-primary-900 font-medium">{job}</span>
-                  </div>
-                ))}
-              </div>
-              
-              <div className="mt-8 pt-6 border-t border-syntax-purple-200">
-                <Link href="/kontakt?karrierepfad=web-development">
-                  <Button variant="accent" fullWidth size="lg">
-                    Kostenlose Beratung buchen
-                    <ArrowRight className="w-5 h-5 ml-2" />
-                  </Button>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 4-Kurs Progression */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-syntax-primary-900 mb-4 font-clash-display">
+          <div className="text-center mb-12 lg:mb-16">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-syntax-primary-900 mb-3 lg:mb-4 font-clash-display">
               4 Kurse, 1 Karriereziel
             </h2>
-            <p className="text-xl text-modern-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg lg:text-xl text-modern-gray-600 max-w-3xl mx-auto">
               Jeder Kurs baut auf dem vorherigen auf und bringt dich deinem Ziel als Web Developer näher.
             </p>
           </div>
 
-          <div className="space-y-8">
+          <div className="space-y-6 lg:space-y-8">
             {careerPath.courses.map((course, index) => (
               <div key={course.id} className="relative">
                 <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
-                  <div className="grid grid-cols-1 lg:grid-cols-4 gap-0">
-                    {/* Course Number & Icon */}
-                    <div className={`${
-                      course.color === 'purple' ? 'bg-gradient-to-br from-purple-600 to-purple-700' :
-                      course.color === 'blue' ? 'bg-gradient-to-br from-blue-600 to-blue-700' :
-                      course.color === 'green' ? 'bg-gradient-to-br from-green-600 to-green-700' :
-                      'bg-gradient-to-br from-purple-600 to-purple-700'
-                    } text-white p-8 flex items-center justify-center`}>
-                      <div className="text-center">
-                        <div className="text-4xl font-bold mb-2 font-clash-display">
-                          {course.number}
+                  <div className="grid grid-cols-1 lg:grid-cols-4">
+                    {/* Course Image & Number */}
+                    <div className="relative h-48 lg:h-auto overflow-hidden">
+                      <img 
+                        src={course.image} 
+                        alt={course.title}
+                        className="w-full h-full object-cover"
+                      />
+                      <div className="absolute inset-0 bg-black/40"></div>
+                      <div className="absolute inset-0 flex items-center justify-center">
+                        <div className="text-center text-white">
+                          <div className="text-3xl lg:text-4xl font-bold mb-2 font-clash-display">
+                            {course.number}
+                          </div>
+                          <div className="text-sm font-medium">Kurs</div>
                         </div>
-                        <course.icon className="w-12 h-12 mx-auto" />
                       </div>
                     </div>
 
                     {/* Course Content */}
-                    <div className="lg:col-span-3 p-8">
-                      <div className="flex items-start justify-between mb-4">
-                        <div>
-                          <h3 className="text-2xl font-bold text-syntax-primary-900 mb-2 font-clash-display">
+                    <div className="lg:col-span-3 p-6 lg:p-8">
+                      <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-4 lg:mb-6">
+                        <div className="flex-1">
+                          <h3 className="text-xl lg:text-2xl font-bold text-syntax-primary-900 mb-2 font-clash-display">
                             {course.title}
                           </h3>
-                          <p className="text-lg text-syntax-purple-900 font-medium mb-3">
+                          <p className="text-base lg:text-lg text-syntax-purple-900 font-medium mb-3">
                             {course.goal}
                           </p>
-                          <p className="text-modern-gray-600 mb-4">{course.description}</p>
+                          <p className="text-modern-gray-600 mb-4 text-sm lg:text-base">{course.description}</p>
                         </div>
-                        <div className="text-right">
-                          <div className="text-sm text-modern-gray-500">Dauer</div>
-                          <div className="font-bold text-syntax-primary-900">{course.duration}</div>
+                        <div className="text-left lg:text-right lg:ml-6 flex-shrink-0">
+                          <div className="text-xs lg:text-sm text-modern-gray-500">Dauer</div>
+                          <div className="font-bold text-syntax-primary-900 text-sm lg:text-base">{course.duration}</div>
                         </div>
                       </div>
 
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6 mb-4 lg:mb-6">
                         <div>
-                          <h4 className="font-bold text-syntax-primary-900 mb-3">Was du lernst</h4>
-                          <div className="grid grid-cols-2 gap-2">
+                          <h4 className="font-bold text-syntax-primary-900 mb-3 text-sm lg:text-base">Was du lernst</h4>
+                          <div className="grid grid-cols-1 gap-2">
                             {course.skills.map((skill, skillIndex) => (
-                              <div key={skillIndex} className="flex items-center">
-                                <CheckCircle className="w-4 h-4 text-syntax-green-900 mr-2 flex-shrink-0" />
-                                <span className="text-sm text-modern-gray-700">{skill}</span>
+                              <div key={skillIndex} className="flex items-start">
+                                <CheckCircle className="w-3 h-3 lg:w-4 lg:h-4 text-syntax-green-900 mr-2 mt-0.5 flex-shrink-0" />
+                                <span className="text-xs lg:text-sm text-modern-gray-700 leading-relaxed">{skill}</span>
                               </div>
                             ))}
                           </div>
                         </div>
                         
                         <div>
-                          <div className="bg-gradient-to-br from-syntax-yellow-50 to-syntax-yellow-100 p-4 rounded-xl">
+                          <div className="bg-syntax-yellow-50 p-4 rounded-xl border border-syntax-yellow-200">
                             <div className="flex items-center mb-2">
-                              <Award className="w-5 h-5 text-syntax-yellow-900 mr-2" />
-                              <span className="font-bold text-syntax-primary-900 text-sm">Abschluss</span>
+                              <Award className="w-4 h-4 lg:w-5 lg:h-5 text-syntax-yellow-900 mr-2" />
+                              <span className="font-bold text-syntax-primary-900 text-xs lg:text-sm">Abschluss</span>
                             </div>
-                            <p className="text-syntax-primary-900 font-medium">{course.certificate}</p>
+                            <p className="text-syntax-primary-900 font-medium text-sm lg:text-base">{course.certificate}</p>
                           </div>
                         </div>
                       </div>
 
-                      <div className="flex gap-4">
+                      <div className="flex flex-col sm:flex-row gap-3 lg:gap-4">
                         <Link href={`/kurse/${course.id}`}>
-                          <Button variant="primary">
+                          <Button variant="primary" size="md" className="w-full sm:w-auto">
                             Kurs Details ansehen
                             <ArrowRight className="w-4 h-4 ml-2" />
                           </Button>
                         </Link>
                         <Link href={`/kontakt?kurs=${course.id}`}>
-                          <Button variant="outline">
+                          <Button variant="outline" size="md" className="w-full sm:w-auto">
                             Einzelberatung buchen
                           </Button>
                         </Link>
@@ -270,9 +210,9 @@ export default function WebDevelopmentCareerPath() {
 
                 {/* Progress Arrow */}
                 {index < careerPath.courses.length - 1 && (
-                  <div className="flex justify-center my-6">
-                    <div className="bg-white rounded-full p-3 shadow-lg border-2 border-syntax-purple-200">
-                      <ArrowRight className="w-6 h-6 text-syntax-purple-900" />
+                  <div className="flex justify-center my-4 lg:my-6">
+                    <div className="bg-white rounded-full p-2 lg:p-3 shadow-lg border-2 border-syntax-purple-200">
+                      <ArrowRight className="w-5 h-5 lg:w-6 lg:h-6 text-syntax-purple-900" />
                     </div>
                   </div>
                 )}
@@ -283,35 +223,35 @@ export default function WebDevelopmentCareerPath() {
       </section>
 
       {/* Job Outcomes */}
-      <section className="py-20">
+      <section className="py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-syntax-primary-900 mb-4 font-clash-display">
+          <div className="text-center mb-12 lg:mb-16">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-syntax-primary-900 mb-3 lg:mb-4 font-clash-display">
               Deine konkreten Berufschancen
             </h2>
-            <p className="text-xl text-modern-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg lg:text-xl text-modern-gray-600 max-w-3xl mx-auto">
               Je nach Interessenschwerpunkt kannst du bereits nach verschiedenen Kursen einsteigen.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
             {jobOutcomes.map((job, index) => (
-              <div key={index} className="bg-white rounded-xl shadow-lg p-8 border border-modern-gray-200">
+              <div key={index} className="bg-white rounded-xl shadow-lg p-6 lg:p-8 border border-modern-gray-200">
                 <div className="flex items-start justify-between mb-4">
-                  <div>
-                    <h3 className="text-xl font-bold text-syntax-primary-900 mb-2">{job.title}</h3>
-                    <p className="text-modern-gray-600 mb-3">{job.description}</p>
-                    <div className="text-2xl font-bold text-syntax-green-900 mb-2">{job.salary}</div>
-                    <p className="text-sm text-modern-gray-500">{job.companies}</p>
+                  <div className="flex-1">
+                    <h3 className="text-lg lg:text-xl font-bold text-syntax-primary-900 mb-2">{job.title}</h3>
+                    <p className="text-modern-gray-600 mb-3 text-sm lg:text-base">{job.description}</p>
+                    <div className="text-xl lg:text-2xl font-bold text-syntax-green-900 mb-2">{job.salary}</div>
+                    <p className="text-xs lg:text-sm text-modern-gray-500">{job.companies}</p>
                   </div>
-                  <Briefcase className="w-8 h-8 text-syntax-purple-900" />
+                  <Briefcase className="w-6 h-6 lg:w-8 lg:h-8 text-syntax-purple-900 ml-4 flex-shrink-0" />
                 </div>
                 
                 <div className="border-t border-modern-gray-200 pt-4">
-                  <h4 className="font-bold text-syntax-primary-900 mb-3 text-sm">Empfohlene Kurse</h4>
+                  <h4 className="font-bold text-syntax-primary-900 mb-3 text-xs lg:text-sm">Empfohlene Kurse</h4>
                   <div className="flex flex-wrap gap-2">
                     {job.courses.map((courseName, courseIndex) => (
-                      <span key={courseIndex} className="px-3 py-1 bg-syntax-purple-100 text-syntax-purple-900 rounded-full text-xs font-medium">
+                      <span key={courseIndex} className="px-2 lg:px-3 py-1 bg-syntax-purple-100 text-syntax-purple-900 rounded-full text-xs font-medium">
                         {courseName}
                       </span>
                     ))}
@@ -324,12 +264,12 @@ export default function WebDevelopmentCareerPath() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-syntax-primary-900 via-syntax-purple-900 to-syntax-primary-700 text-white">
+      <section className="py-16 lg:py-20 bg-syntax-primary-900 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 font-clash-display">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 lg:mb-6 font-clash-display">
             Starte deinen Web Development Karrierepfad
           </h2>
-          <p className="text-xl mb-8 opacity-90">
+          <p className="text-lg lg:text-xl mb-6 lg:mb-8 opacity-90">
             100% gefördert mit Bildungsgutschein. Flexibel kombinierbar. Einzelkurse oder kompletter Pfad.
           </p>
           
@@ -337,7 +277,7 @@ export default function WebDevelopmentCareerPath() {
             <Link href="/kontakt?karrierepfad=web-development">
               <Button variant="accent" size="xl">
                 Kostenlose Beratung buchen
-                <ArrowRight className="w-5 h-5 ml-2" />
+                <ArrowRight className="w-4 h-4 lg:w-5 lg:h-5 ml-2" />
               </Button>
             </Link>
             <Link href="/bildungsgutschein">
